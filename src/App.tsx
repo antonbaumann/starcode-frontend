@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import AboutView from './views/AboutView';
+import CoursesView from './views/CoursesView';
+import HomeView from './views/HomeView'
+import MissionView from './views/MissionView';
+import VolunteerView from './views/VolunteerView';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/mission" element={<MissionView />} />
+          <Route path="/courses" element={<CoursesView />} />
+          <Route path="/about" element={<AboutView />} />
+          <Route path="/volunteer" element={<VolunteerView />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
