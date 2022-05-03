@@ -1,5 +1,13 @@
+import "./Home.scss"
+import StarcodeLogo from "./StarcodeLogo"
+
 const Header = () => {
-    return <div className="header" />
+    return (
+        <nav className="header">
+            <StarcodeLogo height="3em" />
+        </nav>
+    )
+
 }
 
 export default Header
