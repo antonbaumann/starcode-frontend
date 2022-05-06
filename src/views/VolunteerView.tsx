@@ -1,5 +1,12 @@
+import Header from "../components/Header"
+
 const VolunteerView = () => {
-    return <main className="volunteer">volunteer</main>
+    return (
+        <main className="volunteer">
+            <Header />
+            volunteer
+        </main>
+    )
 }
 
 export default VolunteerView
