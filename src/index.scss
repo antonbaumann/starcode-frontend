@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,12 +56,22 @@ table {
   src: url(./assets/fonts/Futura_Book.ttf) format('truetype');
 }
 
+@font-face {
+	font-family: 'Demi Italic';
+	font-weight: 500;
+	src: url(./assets/fonts/Demi_Italic.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-size: 17px;
   font-family: 'Futura Book', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  padding: 0 2em;
 }
 
 code {
