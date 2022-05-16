@@ -1,0 +1,24 @@
+.event {
+    width: 400px;
+    font-family: 'Video Cond', monospace;
+    padding: 0.3em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .event-date {
+        font-size: 300%;
+    }
+
+    .event-text {
+        margin-left: 1em;
+
+        display: flex;
+        flex-direction: column;
+
+        .event-location {
+            font-size: 150%;
+        }
+    }
+}
