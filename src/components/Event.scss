@@ -1,7 +1,11 @@
 .event {
-    width: 400px;
+    max-width: 80vw;
+    width: 450px;
     font-family: 'Video Cond', monospace;
     padding: 0.3em;
+    margin-bottom: 1em;
+
+    background-color: white;
 
     display: flex;
     flex-direction: row;
