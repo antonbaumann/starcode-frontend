@@ -62,6 +62,12 @@ table {
 	src: url(./assets/fonts/Demi_Italic.ttf) format('truetype');
 }
 
+@font-face {
+	font-family: 'Video Cond';
+	font-weight: 200;
+	src: url(./assets/fonts/VideoCond-Light.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-size: 18px;

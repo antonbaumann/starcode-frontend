@@ -1,6 +1,5 @@
 import "./WhyStarcodeSection.scss";
 import SectionTitle from "../SectionTitle"
-import { ReactComponent as BlueStar } from '../../assets/svg/BlueStar.svg'
 import twoGirlsStar from '../../assets/img/2_girls_star.png'
 
 const WhyStarcodeSection = () => {
