@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 3em 0em;
+
+    .newsletter-button {
+        margin: 1.5em 0;
+    }
+
+    .social-media {
+        margin-bottom: 2em;
+
+        svg {
+            margin: 0 0.5em;
+        }
+    }
+
+    .footer-menu {
+        a {
+            text-decoration: none;
+            margin: 0 2em;
+        }
+    }
+
+    @media only screen and (max-width: $content-breakpoint) {
+        .footer-menu {
+            a {
+                margin: 0 0.5em;
+            }
+        }
+    }
+}

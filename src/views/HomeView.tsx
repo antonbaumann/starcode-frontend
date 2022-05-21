@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Header from "../components/Header"
 import FindCoursesSection from "../components/home/FindCoursesSection"
 import NewsSection from "../components/home/NewsSection"
@@ -11,7 +12,8 @@ const Home = () => {
             <FindCoursesSection />
             <WhyStarcodeSection />
             <UpcomingEventsSection />
-            <NewsSection />
+            {/* <NewsSection /> */}
+            <Footer darkMode={true} />
         </main>
     )
 }
