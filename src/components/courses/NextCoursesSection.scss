@@ -83,8 +83,27 @@
     }
 
     @media only screen and (max-width: $content-breakpoint) {
+        height: unset;
+        flex-direction: column-reverse;
+
         .image-container {
-            display: none;
+            height: 70vh;
+            flex-grow: unset;
+
+            img {
+                width: 70%;
+                max-width: 400px;
+            }
         }
+
+        .content {
+            .title { 
+                font-size: 300%;
+            }
+        }
+
+        // .image-container {
+        //     display: block;
+        // }
     }
 }
