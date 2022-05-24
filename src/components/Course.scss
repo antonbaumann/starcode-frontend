@@ -76,13 +76,12 @@
 
         .enroll-button {
             display: none;
-            width: 0;
         }
     }
 
     @media only screen and (max-width: $content-breakpoint) {
         .enroll-button {
-            visibility: hidden;
+            display: none;
         }
 
         .course-header {
