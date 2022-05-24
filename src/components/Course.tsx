@@ -34,7 +34,9 @@ const Course = ({
     return (
         <div className={classNames('course', className, {'collapsed': isCollapsed})}>
             <div className='course-header'>
-                <ChatbotIcon height="2.5em" stroke="#0821DA"/>
+                <div className='chatbot-icon-container'>
+                    <ChatbotIcon height="2.5em" stroke="#0821DA"/>
+                </div>
                 <div className="date">
                     {toDayMonth(dateFrom)}
                 </div>

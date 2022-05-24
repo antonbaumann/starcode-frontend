@@ -87,6 +87,8 @@
         flex-direction: column-reverse;
 
         .image-container {
+            display: none; // todo
+
             height: 70vh;
             flex-grow: unset;
 
@@ -100,10 +102,11 @@
             .title { 
                 font-size: 300%;
             }
+            .filter-container {
+                .filter-button, .reset-button {
+                    font-size: 100%;
+                }
+            }
         }
-
-        // .image-container {
-        //     display: block;
-        // }
     }
 }
