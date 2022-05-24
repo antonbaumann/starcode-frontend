@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+
+.course {
+    position: relative;
+    background-color: white;
+    border-radius: 3px;
+    padding: 1em;
+
+    max-width: 1000px;
+
+    .course-header {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        .date {
+            font-family: 'Video Cond', monospace;
+            font-size: 250%;
+    
+            margin: 0 2rem;
+        }
+    
+        .info {
+            .city {
+                font-weight: 800;
+            }
+        }
+
+        .enroll-button {
+            margin-left: auto;
+            background-color: $blue;
+            color: white;
+        }
+    }
+
+    .course-body {
+        margin-top: 1em;
+
+        b {
+            display: inline-block;
+            font-weight: bold;
+            width: 70px;
+        }
+
+        .description {
+            margin-top: 1em;
+        }
+    }
+
+    .collapse-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &.collapsed {
+        width: 500px;
+
+        .course-body {
+            display: none;
+        }
+
+        .enroll-button {
+            display: none;
+        }
+    }
+}

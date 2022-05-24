@@ -14,9 +14,9 @@ const InstagramIcon = ({stroke, height}: InstagramIconProps) => {
                         transform="translate(-187.642 -175.875)" 
                         fill="none" 
                         stroke={stroke}
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        stroke-width="3"
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="3"
                     />
                 </g>
                 <g id="CIRCLE" transform="translate(21.837 21.836)">
@@ -27,9 +27,9 @@ const InstagramIcon = ({stroke, height}: InstagramIconProps) => {
                         r="18.095" 
                         fill="none" 
                         stroke={stroke}
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        stroke-width="3"
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="3"
                     />
                 </g>
                 <g id="CIRCLE-2" transform="translate(59.896 13.178)">
@@ -40,9 +40,9 @@ const InstagramIcon = ({stroke, height}: InstagramIconProps) => {
                         r="3.394" 
                         fill="none" 
                         stroke={stroke} 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        stroke-width="3"
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="3"
                     />
                 </g>
             </g>

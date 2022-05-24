@@ -1,4 +1,5 @@
 import './Event.scss'
+import {toDayMonth} from '../util/date'
 
 type EventProps = {
     date: Date
@@ -10,7 +11,7 @@ const Event = ({date, location, title}: EventProps) => {
     return (
         <div className="event">
             <div className="event-date">
-                {String(date.getDay()).padStart(2, '0')}/{String(date.getMonth()).padStart(2, '0')}
+                {toDayMonth(date)}
             </div>
             <div className="event-text">
                 <div className="event-location">{location}</div>

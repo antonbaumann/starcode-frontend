@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.course-list-section {
+    position: relative;
+    padding: 2em 2em;
+    background-color: $dark-blue;
+
+    min-height: 550px;
+
+    .course {
+        z-index: 10;
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .girl-image {
+        position: absolute;
+        width: 30vw;
+        right: 0;
+        bottom: 0;
+    }
+}
