@@ -15,9 +15,9 @@ const FacebookIcon = ({stroke, height}: FacebookIconProps) => {
                     transform="translate(-154.204 -175.875)" 
                     fill="none" 
                     stroke={stroke} 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="3"
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth="3"
                 />
             </g>
         </svg>

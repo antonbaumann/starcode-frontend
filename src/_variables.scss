@@ -1,7 +1,9 @@
 /*Colors*/
-$header-background-color: #0A0D23;
 $light-grey: #F2F2F1;
 $blue: #0821DA;
+$dark-blue: #0A0D23;
+
+$header-background-color: $dark-blue;
 
 /*Breakpoints*/
 $content-breakpoint: 800px;

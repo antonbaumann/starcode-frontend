@@ -1,0 +1,90 @@
+@import "../../variables.scss";
+
+
+.next-courses-section {
+    display: flex;
+    flex-direction: row;
+
+    height: calc(100vh - 3.6em);
+    padding: 0;
+
+    .content {
+        height: 100%;
+
+        padding: 0 2em;
+
+        display: flex;
+        flex-grow: 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+
+        .title {
+            margin-top: 1.5em;
+            font-size: 400%;
+            text-align: center;
+        }
+
+        .filter-container {
+            width: 100%;
+            margin-top: 6em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .filter-button {
+                margin-top: 1em;
+                background-color: $blue;
+                color: white;
+            }
+
+            .reset-button {
+                margin-top: 1em;
+            }
+        }
+
+        .all-courses-indicator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+
+            p {
+                font-size: 130%;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .image-container {
+        background-color: blue;
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        img {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        .image-container {
+            flex-grow: 2;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $content-breakpoint) {
+        .image-container {
+            display: none;
+        }
+    }
+}
