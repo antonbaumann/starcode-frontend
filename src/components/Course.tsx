@@ -52,6 +52,7 @@ const Course = ({
                 <div className="where"><b>Wo?</b> {cities.join(', ')}</div>
                 <div className='description'>{description}</div>
             </div>
+            <Button className='enroll-button-mobile' text='anmelden' />
             <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse}/>
         </div>
     )
