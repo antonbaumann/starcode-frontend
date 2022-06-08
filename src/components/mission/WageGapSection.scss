@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.wage-gap-section {
+    margin-top: 6em;
+    padding: 0;
+
+    .content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+
+        .graphic {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            .seventyfive-percent-image {
+                width: 10%
+            }
+
+            .woman-man-image {
+                width: 70%;
+            }
+
+            .hundred-percent-image {
+                width: 20%;
+            }
+        }
+
+        .text {
+            margin-top: 1rem;
+            color: white;
+            line-height: 1.2;
+            font-size: 130%;
+            font-weight: bold;
+        }
+    }
+
+    @media only screen and (max-width: $content-breakpoint) { 
+        .content {
+            width: 90vw;
+            max-width: 500px;
+        }
+    }
+}

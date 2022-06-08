@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.women-proportion-section {
+    .text-image-group {
+        margin-left: 15vw;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: white;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+        line-height: 1.2;
+
+        .percent-image {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $content-breakpoint) {
+        margin-top: 3em;
+
+        .text-image-group {
+            max-width: 90vw;
+            margin: 0 auto;
+        }
+    }
+}

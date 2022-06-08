@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.wage-comparison-section {
+    margin-top: 5em;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+
+        .text {
+            color: white;
+            line-height: 1.2;
+            font-size: 130%;
+            font-weight: bold;
+            width: 220px;
+        }
+
+        .circle {
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+    @media only screen and (max-width: $content-breakpoint) {
+        .content {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .circle {
+                width: 90vw;
+                height: 90vw;
+            }
+
+            .text {
+                max-width: 90vw;
+                margin-top: 1em;
+            }
+        }
+    }
+}
