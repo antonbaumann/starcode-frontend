@@ -1,0 +1,77 @@
+@import '../../variables';
+
+.how-you-can-help-section {
+    padding-top: 3em;
+
+    overflow: hidden;
+
+    position: relative;
+    background: linear-gradient(to bottom, #F78DE5 0%, #A53EC4 100%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .content {
+        z-index: 2;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+
+        .section-title {
+            font-size: 350%;
+        }
+
+        .description {
+            margin-top: 1em;
+        }
+    }
+
+    .girl-image {
+        z-index: 1;
+        margin-top: -3em;
+    }
+
+    .circle {
+        z-index: 0;
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        top: -200px;
+        right: -200px;
+    }
+
+    @media only screen and (max-width: $content-breakpoint) { 
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+
+
+        .content {
+            .section-title {
+                font-size: 250%;
+            }
+
+            width: 90vw;
+        }
+
+        .girl-image {
+            width: 70vw;
+            margin-left: auto;
+            margin-bottom: -10vw;
+            margin-top: 3em;
+        }
+
+        .circle {
+            width: 150vw;
+            height: 150vw;
+            bottom: -50vw;
+            right: -50vw;
+            top: unset;
+
+            transform: rotate(180deg);
+        }
+    }
+}
