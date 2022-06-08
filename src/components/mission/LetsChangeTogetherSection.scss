@@ -1,0 +1,27 @@
+@import '../../variables';
+
+.lets-change-together-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+
+    .section-title {
+        color: white;
+        font-size: 500%;
+
+        margin-top: 9rem;
+    }
+
+    .arrow-container {
+        margin-bottom: 4rem;
+    }
+
+    @media screen and (max-width: $content-breakpoint) {
+        .section-title {
+            margin-top: 4rem;
+            font-size: 350%;
+        }
+    }
+}
