@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73.184" height="56.072" viewBox="0 0 73.184 56.072">
+  <g id="_0_Stift_Nr__3" data-name="0_Stift_Nr__3" transform="translate(1.5 2.091)">
+    <g id="Group_279" data-name="Group 279" transform="translate(0 0)">
+      <g id="LINE" transform="translate(51.139)">
+        <line id="Line_193" data-name="Line 193" x1="11.131" y2="7.894" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Path_755" data-name="Path 755" d="M327.526,227.7" transform="translate(-316.395 -227.438)" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LINE-2" data-name="LINE" transform="translate(50.688 44.868)">
+        <line id="Line_194" data-name="Line 194" x1="11.583" y1="6.074" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LINE-3" data-name="LINE" transform="translate(54.818 36.156)">
+        <line id="Line_195" data-name="Line 195" x2="13.626" y2="2.926" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LINE-4" data-name="LINE" transform="translate(56.415 26.408)">
+        <line id="Line_196" data-name="Line 196" x2="13.768" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LINE-5" data-name="LINE" transform="translate(54.818 13.732)">
+        <line id="Line_197" data-name="Line 197" y1="2.929" x2="13.638" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LWPOLYLINE" transform="translate(0 16.57)">
+        <rect id="Rectangle_179" data-name="Rectangle 179" width="19.677" height="19.677" rx="0.571" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LWPOLYLINE-2" data-name="LWPOLYLINE" transform="translate(23.052 4.592)">
+        <path id="Path_756" data-name="Path 756" d="M310.441,242.265a1.315,1.315,0,0,1,.585-1.093l17.053-11.367a1.311,1.311,0,0,1,2.038,1.09v41.011a1.311,1.311,0,0,1-2.038,1.09l-17.053-11.369a1.311,1.311,0,0,1-.585-1.09Z" transform="translate(-310.441 -229.585)" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="LWPOLYLINE-3" data-name="LWPOLYLINE" transform="translate(1.05 39.364)">
+        <path id="Path_757" data-name="Path 757" d="M305.148,245.557a1.312,1.312,0,0,1,1.219-.824h7.013a1.307,1.307,0,0,1,1.217,1.8l-4.2,10.495a1.307,1.307,0,0,1-1.217.824h-7.013a1.314,1.314,0,0,1-1.219-1.8Z" transform="translate(-300.856 -244.733)" fill="none" stroke="#fdf266" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
