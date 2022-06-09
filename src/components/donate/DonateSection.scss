@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.donate-section {
+    padding-top: 2em;
+    min-height: 750px;
+
+    .content {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .circle {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            z-index: 1;
+        }
+    
+        .girls-image {
+            position: absolute;
+            width: 500px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            top: 100px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 2;
+            max-width: 90vw;
+        }
+
+        .button {
+            margin-top: 220px;
+            background-color: $blue;
+            color: white;
+            z-index: 3;
+        }
+
+        .card {
+            margin-top: 120px;
+            width: 600px;
+
+            background-color: white;
+            border-radius: 3px;
+
+            padding: 2em;
+            box-shadow: 5px 5px 20px grey;
+
+            max-width: calc(90vw - 4em);
+            z-index: 3;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
