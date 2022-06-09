@@ -5,6 +5,7 @@ import CoursesView from './views/CoursesView';
 import HomeView from './views/HomeView'
 import MissionView from './views/MissionView';
 import VolunteerView from './views/VolunteerView';
+import DonateView from './views/DonateView';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/courses" element={<CoursesView />} />
           <Route path="/about" element={<AboutView />} />
           <Route path="/volunteer" element={<VolunteerView />} />
+          <Route path="/donate" element={<DonateView />} />
         </Routes>
       </Router>
     </div>
