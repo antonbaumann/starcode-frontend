@@ -1,11 +1,13 @@
 type ArrowDownIconProps = {
     stroke?: string
     height?: string
+    className?: string
+    onClick?: () => void
 }
 
-const ArrowDownIcon = ({stroke, height}: ArrowDownIconProps) => {
+const ArrowDownIcon = ({stroke, height, className, onClick}: ArrowDownIconProps) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" height={height} viewBox="0 0 34 79.5">
+        <svg xmlns="http://www.w3.org/2000/svg" className={className} height={height} viewBox="0 0 34 79.5" onClick={onClick}>
             <line 
                 id="Line_198" 
                 data-name="Line 198" 

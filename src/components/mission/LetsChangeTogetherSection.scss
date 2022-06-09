@@ -16,6 +16,10 @@
 
     .arrow-container {
         margin-bottom: 4rem;
+
+        .arrow-icon {
+            cursor: pointer;
+        }
     }
 
     @media screen and (max-width: $content-breakpoint) {

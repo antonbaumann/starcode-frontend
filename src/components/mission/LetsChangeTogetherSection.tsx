@@ -3,11 +3,22 @@ import SectionTitle from '../SectionTitle'
 import ArrowDownIcon from '../ArrowDownIcon'
 
 const LetsChangeTogetherSection = () => {
+
+    const handleArrowClick = () => {
+        const arrowIcon = document.getElementsByClassName('arrow-icon')[0]
+        var bounds = arrowIcon.getBoundingClientRect();
+        window.scroll({
+            top: bounds.bottom, 
+            left: 0, 
+            behavior: 'smooth' 
+          });
+    }
+
     return (
         <section className="lets-change-together-section">
             <SectionTitle className="section-title">Lets Change Together</SectionTitle>
             <div className='arrow-container'>
-                <ArrowDownIcon height='3em' stroke='#fff'/>
+                <ArrowDownIcon height='3em' stroke='#fff' className='arrow-icon' onClick={handleArrowClick}/>
             </div>
         </section>
     )
