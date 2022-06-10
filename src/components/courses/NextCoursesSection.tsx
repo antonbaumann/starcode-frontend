@@ -9,7 +9,7 @@ const NextCoursesSection = () => {
         <section className="next-courses-section">
             <div className="content">
                 <SectionTitle className="title">Unsere Nächsten Kurse</SectionTitle>  
-                <div className='filter-container'>
+                {/* <div className='filter-container'>
                     <Button 
                         text='Stadt'
                         className='filter-button'
@@ -26,7 +26,7 @@ const NextCoursesSection = () => {
                         text='Zurücksetzen'
                         className='reset-button'
                     />
-                </div>
+                </div> */}
 
                 <div className='all-courses-indicator'>
                     <p>Zu allen Kursen</p>
