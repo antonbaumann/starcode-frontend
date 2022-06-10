@@ -4,17 +4,12 @@ import classNames from 'classnames'
 import {toDayMonth, toGermanLetterDate} from '../util/date'
 import CollapseButton from './CollapseButton'
 import Button from './Button'
+import { CourseModel } from '../data/courses'
 
 type CourseProps = {
     className?: string
     isCollapsed: boolean
-    title: string
-    cities: string[]
-    dateFrom: Date
-    dateTo: Date
-    ageFrom?: number
-    ageTo?: number
-    description: string
+    course: CourseModel
 
     onToggleCollapse: () => void
 }
@@ -22,13 +17,7 @@ type CourseProps = {
 const Course = ({
     className, 
     isCollapsed, 
-    title, 
-    cities, 
-    dateFrom, 
-    dateTo, 
-    ageFrom=12,
-    ageTo=19,
-    description, 
+    course,
     onToggleCollapse,
 }: CourseProps) => {
     return (
@@ -38,21 +27,21 @@ const Course = ({
                     <ChatbotIcon height="2.5em" stroke="#0821DA"/>
                 </div>
                 <div className="date">
-                    {toDayMonth(dateFrom)}
+                    {toDayMonth(course.startDate)}
                 </div>
 
                 <div className="info">
-                    <div className="city">{cities.at(0)}</div>
-                    <div className="title">{title}</div>
+                    <div className="city">{course.city}</div>
+                    <div className="title">{course.name}</div>
                 </div>
 
                 <Button className='enroll-button' text='anmelden' />
             </div>
             <div className="course-body">
-                <div className="age"><b>Wer?</b> Mädchen* im Alter von {ageFrom} bis {ageTo}</div>
-                <div className="when"><b>Wann?</b> {toGermanLetterDate(dateFrom)} - {toGermanLetterDate(dateTo)}</div>
-                <div className="where"><b>Wo?</b> {cities.join(', ')}</div>
-                <div className='description'>{description}</div>
+                <div className="age"><b>Wer?</b> Mädchen* im Alter von {course.minimumAge} bis {course.maximumAge}</div>
+                <div className="when"><b>Wann?</b> {toGermanLetterDate(course.startDate)} - {toGermanLetterDate(course.endDate)}</div>
+                <div className="where"><b>Wo?</b> {course.city}</div>
+                <div className='description'>{course.description}</div>
             </div>
             <Button className='enroll-button-mobile' text='anmelden' />
             <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse}/>
