@@ -24,7 +24,7 @@ const Header = () => {
                 <li><Link to="/about">Über uns</Link></li>
                 <li><Link to="/volunteer">Volunteer</Link></li>
                 <li><Link to="/donate">Spenden</Link></li>
-                <li className="secondary"><Link to="/partners">Partner</Link></li>
+                {/* <li className="secondary"><Link to="/partners">Partner</Link></li> */}
                 <li className="secondary"><Link to="/contact">Kontakt</Link></li>
                 <li className="secondary"><Link to="/faq">FAQ</Link></li>
                 <li className="secondary"><Link to="/imprint">Impressum</Link></li>

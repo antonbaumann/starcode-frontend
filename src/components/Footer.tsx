@@ -24,7 +24,7 @@ const Footer = ({darkMode}: FooterProps) => {
             </div>
 
             <div className="footer-menu">
-                <Link to="/partners">Partner</Link>
+                {/* <Link to="/partners">Partner</Link> */}
                 <Link to="/contact">Kontakt</Link>
                 <Link to="/faq">FAQ</Link>
                 <Link to="/imprint">Impressum</Link>
