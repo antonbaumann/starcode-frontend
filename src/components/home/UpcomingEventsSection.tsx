@@ -2,8 +2,11 @@ import './UpcomingEventsSection.scss'
 import Event from "../Event"
 import { ReactComponent as Map } from '../../assets/svg/Map.svg'
 import SectionTitle from '../SectionTitle'
+import { useCourses } from '../../data/courses'
 
 const UpcomingEventsSection = () => {
+    const courses = useCourses()
+
     return (
         <section className="upcoming-events">
             <div className="location">
@@ -13,31 +16,12 @@ const UpcomingEventsSection = () => {
                 Du hast Lust einen Ableger in deiner Stadt zu gründen? Dann schau doch mal hier!</p>
             </div>
             <div className="event-list">
-                <Event 
-                    date={new Date(2020, 5, 1)}
-                    location="Berlin"
-                    title="Einsteigerkurs Chatbot"
-                />
-                <Event 
-                    date={new Date(2020, 5, 1)}
-                    location="Berlin"
-                    title="Einsteigerkurs Chatbot"
-                />
-                <Event 
-                    date={new Date(2020, 5, 1)}
-                    location="Berlin"
-                    title="Einsteigerkurs Chatbot"
-                />
-                <Event 
-                    date={new Date(2020, 5, 1)}
-                    location="Berlin"
-                    title="Einsteigerkurs Chatbot"
-                />
-                <Event 
-                    date={new Date(2020, 5, 1)}
-                    location="Berlin"
-                    title="Einsteigerkurs Chatbot"
-                />
+                {courses.slice(0, 5).map(course => <Event 
+                    key={course.id} 
+                    date={course.startDate} 
+                    location={course.city} 
+                    title={course.name}
+                />)}
             </div>
         </section>
     )
