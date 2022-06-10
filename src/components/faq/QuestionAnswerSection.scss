@@ -1,0 +1,40 @@
+@import '../../variables';
+
+$highlightColor: #FBA8E0;
+
+.question-answer-section {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $dark-blue;
+
+    .question-answer-element {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3em;
+
+        max-width: 800px;
+
+        .number {
+            color: $highlightColor;
+            font-size: 130%;
+            margin-right: 2rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .question {
+                color: $highlightColor;
+            }
+
+            .answer {
+                margin-top: 1em;
+                color: white
+            }
+        }
+    }
+}

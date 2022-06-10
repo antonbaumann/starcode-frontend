@@ -1,0 +1,26 @@
+.overview-section {
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    background: linear-gradient(to right, #FBA8E0,#0821DA);
+
+    .section-title {
+        font-size: 300%;
+        margin-bottom: 3rem;
+    }
+
+    .text {
+        margin-top: 2em;
+        text-align: center;
+
+        a {
+            color: #232E6C;
+        }
+    }
+}

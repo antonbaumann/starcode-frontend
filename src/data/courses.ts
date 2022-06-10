@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import courses from './courses.json';
 
 export type CourseModel = {
