@@ -8,6 +8,7 @@ import VolunteerView from './views/VolunteerView';
 import DonateView from './views/DonateView';
 import ImprintView from './views/ImprintView';
 import QuestionAnswerView from './views/QuestionAnswerView';
+import ContactView from './views/ContactView';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<AboutView />} />
           <Route path="/volunteer" element={<VolunteerView />} />
           <Route path="/donate" element={<DonateView />} />
+          <Route path="/contact" element={<ContactView />} />
           <Route path='/faq' element={<QuestionAnswerView />} />
           <Route path='/imprint' element={<ImprintView />} />
         </Routes>
