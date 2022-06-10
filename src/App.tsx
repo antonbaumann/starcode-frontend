@@ -6,6 +6,7 @@ import HomeView from './views/HomeView'
 import MissionView from './views/MissionView';
 import VolunteerView from './views/VolunteerView';
 import DonateView from './views/DonateView';
+import ImprintView from './views/ImprintView';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<AboutView />} />
           <Route path="/volunteer" element={<VolunteerView />} />
           <Route path="/donate" element={<DonateView />} />
+          <Route path='/imprint' element={<ImprintView />} />
         </Routes>
       </Router>
     </div>
