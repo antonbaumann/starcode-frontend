@@ -23,7 +23,7 @@ const CourseListSection = ({courses, identifier}: CourseListSectionProps) => {
                     onToggleCollapse={() => setOpenCourseId(course.id === openCourseId ? '' : course.id)}
                 />
             ))}
-            <img src={girlImage} className="girl-image"/>
+            <img src={girlImage} className="girl-image" alt='girl'/>
         </div>
     )
 }

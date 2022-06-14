@@ -10,7 +10,7 @@ const FindCoursesSection = () => {
         <section className="find-courses">
             <div className="GirlsImageOnCirlce">
                 <GradientCircle className="gradient-circle-home"/>
-                <img src={girlsImage} className="GirlsImage" />
+                <img src={girlsImage} className="GirlsImage" alt='group of girls'/>
             </div>
             <div className="content">
                 <SectionTitle className="section-title">Everyone<br/>Can Code</SectionTitle>

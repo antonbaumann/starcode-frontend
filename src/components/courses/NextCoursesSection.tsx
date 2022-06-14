@@ -65,7 +65,7 @@ const NextCoursesSection = ({cities, selectedCity, onSelectCity, onResetFilter, 
 
             </div>
             <div className="image-container">
-                <img src={girlImg} />
+                <img src={girlImg} alt='girl' />
             </div>
         </section>
     )

@@ -14,7 +14,7 @@ const WhyStarcodeSection = () => {
                 Gemeinsam wollen wir so für mehr Genderdiversität in der IT-Branche sorgen!
                 </p>
             </div>
-            <img src={twoGirlsStar} className="GirlsImage" />
+            <img src={twoGirlsStar} className="GirlsImage" alt='two girls' />
         </section>
     )
 }
