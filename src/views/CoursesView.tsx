@@ -19,8 +19,9 @@ const CoursesView = () => {
         if (!courseList) return
 
         const bounds = courseList.getBoundingClientRect()
+
         window.scrollTo({
-        top: bounds.top - 60, 
+        top: bounds.top + window.scrollY - 60, 
         left: 0, 
         behavior: 'smooth' 
         });
