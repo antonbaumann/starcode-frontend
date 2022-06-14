@@ -6,14 +6,15 @@ import { useState } from 'react'
 
 
 type CourseListSectionProps = {
+    identifier?: string 
     courses: CourseModel[]
 }
 
-const CourseListSection = ({courses}: CourseListSectionProps) => {   
+const CourseListSection = ({courses, identifier}: CourseListSectionProps) => {   
     const [openCourseId, setOpenCourseId] = useState('')
 
     return (
-        <div className="course-list-section">
+        <div className="course-list-section" id={identifier}>
             {courses.map(course => (
                 <Course 
                     key={course.id} 

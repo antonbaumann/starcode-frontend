@@ -6,7 +6,7 @@ const LetsChangeTogetherSection = () => {
 
     const handleArrowClick = () => {
         const arrowIcon = document.getElementsByClassName('arrow-icon')[0]
-        var bounds = arrowIcon.getBoundingClientRect();
+        const bounds = arrowIcon.getBoundingClientRect();
         window.scroll({
             top: bounds.bottom, 
             left: 0, 
