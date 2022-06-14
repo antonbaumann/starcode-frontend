@@ -1,6 +1,6 @@
 type StarcodeLogoProps = {
-    className?: string;
-    height?: string;
+    className?: string
+    height?: string
 }
 
 const StarcodeLogo = ({className, height}: StarcodeLogoProps) => {

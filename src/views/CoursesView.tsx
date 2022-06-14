@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import CourseListSection from "../components/courses/CourseListSection"
 import NextCoursesSection from "../components/courses/NextCoursesSection"
 import Footer from "../components/Footer"

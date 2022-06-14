@@ -10,7 +10,7 @@ const DonateSection = () => {
 
             <div className='content'>
             <GradientCircle className='circle' />
-            <img src={girlsImage} className='girls-image' />
+            <img src={girlsImage} className='girls-image' alt='group of girls'/>
                 <Button text='Jetzt spenden' className='button'/>
                 <div className='card'>
                 Wir freuen uns über jede Spende!

@@ -16,7 +16,7 @@ const Header = () => {
                     onClick={() => setMenuOpen(!menuOpen)}
                     height="1.2em" 
                 />
-                <Link to="/"><StarcodeLogo className="logo" height="1.5em"/></Link>
+                <Link to="/"><StarcodeLogo className="logo" height="1.5em"/><h1 className="assitive-text">starcode</h1></Link>
             </div>
             <ul className={classNames("menu", {open: menuOpen})}>
                 <li><Link to="/mission">Mission</Link></li>
