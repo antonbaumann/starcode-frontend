@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .member-grid-section {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -30,6 +32,19 @@
 
             h4 {
                 font-size: 80%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $content-breakpoint) {
+        .content {
+            justify-content: space-between;
+
+            .member {
+                img {
+                    width: 37vw;
+                    height: 37vw;
+                }
             }
         }
     }
