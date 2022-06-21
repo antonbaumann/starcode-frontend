@@ -6,6 +6,7 @@ import CollapseButton from './CollapseButton'
 import Button from './Button'
 import { CourseModel } from '../strapi/courses/courses'
 import { Link } from 'react-router-dom'
+import ExternalLink from './ExternalLink'
 
 type CourseProps = {
     className?: string
@@ -44,9 +45,9 @@ const Course = ({
                 <div className="where"><b>Wo?</b> {course.city}</div>
                 <div className='description'>{course.description}</div>
             </div>
-            <a href={course.enrollFormUrl ?? '#'} target="_blank" rel="noopener noreferrer">
+            <ExternalLink to={course.enrollFormUrl ?? '#'} target="_blank">
                 <Button className='enroll-button-mobile' text='anmelden' />
-            </a>
+            </ExternalLink>
             <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse}/>
         </div>
     )
