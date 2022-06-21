@@ -1,4 +1,4 @@
-import { FAQModel, useFAQ } from '../../data/faq';
+import { useFAQ, FAQModel } from '../../strapi/faq/faq'
 import './QuestionAnswerSection.scss';
 
 type FAQElementProps = {

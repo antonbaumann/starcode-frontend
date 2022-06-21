@@ -3,15 +3,17 @@ import MemberGridSection from "../components/about/MemberGridSection"
 import OverviewSection from "../components/about/OverviewSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import { useBoardMembers, useTeamMembers } from "../data/team"
+import { useTeam } from "../strapi/team/team"
 
 const AboutView = () => {
+    const team = useTeam()
+
     return (
         <main className="about">
             <Header />
             <OverviewSection />
-            <MemberGridSection title="Vorstand" members={useBoardMembers()} />
-            <MemberGridSection title="Team" members={useTeamMembers()} />
+            <MemberGridSection title="Vorstand" members={team.board} />
+            <MemberGridSection title="Team" members={team.members} />
             <ContactInfoSection />
             <Footer />
         </main>
