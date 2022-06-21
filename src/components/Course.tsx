@@ -44,9 +44,9 @@ const Course = ({
                 <div className="where"><b>Wo?</b> {course.city}</div>
                 <div className='description'>{course.description}</div>
             </div>
-            <Link to={course.enrollFormUrl ?? '#'} target="_blank">
+            <a href={course.enrollFormUrl ?? '#'} target="_blank">
                 <Button className='enroll-button-mobile' text='anmelden' />
-            </Link>
+            </a>
             <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse}/>
         </div>
     )
