@@ -1,10 +1,10 @@
-import { TeamMember } from "../../data/team"
 import SectionTitle from "../SectionTitle"
+import { MemberModel } from "../../strapi/team/team"
 import './MemberGridSection.scss'
 
 type MemberGridSectionProps = {
     title: string
-    members: TeamMember[]
+    members: MemberModel[]
 }
 
 const MemberGridSection = ({title, members}: MemberGridSectionProps) => {
