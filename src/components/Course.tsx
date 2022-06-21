@@ -4,7 +4,8 @@ import classNames from 'classnames'
 import {toDayMonth, toGermanLetterDate} from '../util/date'
 import CollapseButton from './CollapseButton'
 import Button from './Button'
-import { CourseModel } from '../data/courses'
+import { CourseModel } from '../strapi/courses/courses'
+import { Link } from 'react-router-dom'
 
 type CourseProps = {
     className?: string
@@ -43,7 +44,9 @@ const Course = ({
                 <div className="where"><b>Wo?</b> {course.city}</div>
                 <div className='description'>{course.description}</div>
             </div>
-            <Button className='enroll-button-mobile' text='anmelden' />
+            <Link to={course.enrollFormUrl ?? '#'} target="_blank">
+                <Button className='enroll-button-mobile' text='anmelden' />
+            </Link>
             <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse}/>
         </div>
     )

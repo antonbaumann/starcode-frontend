@@ -3,8 +3,7 @@ import CourseListSection from "../components/courses/CourseListSection"
 import NextCoursesSection from "../components/courses/NextCoursesSection"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-
-import { useCourses } from "../data/courses"
+import { useCourses } from "../strapi/courses/courses"
 
 const CoursesView = () => {
     const courses = useCourses()

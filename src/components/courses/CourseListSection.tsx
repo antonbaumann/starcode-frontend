@@ -1,5 +1,5 @@
 import Course from '../Course'
-import {CourseModel} from '../../data/courses'
+import {CourseModel} from '../../strapi/courses/courses'
 import './CourseListSection.scss'
 import girlImage from '../../assets/img/girl2.png'
 import { useState } from 'react'

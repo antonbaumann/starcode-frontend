@@ -2,7 +2,7 @@ import './UpcomingEventsSection.scss'
 import Event from "../Event"
 import { ReactComponent as Map } from '../../assets/svg/Map.svg'
 import SectionTitle from '../SectionTitle'
-import { useCourses } from '../../data/courses'
+import { useCourses } from '../../strapi/courses/courses'
 
 const UpcomingEventsSection = () => {
     const courses = useCourses()
