@@ -55,7 +55,7 @@ export const useCourses = (): CourseModel[] => {
     const coursesResult = data.course.data.attributes.courses
     return coursesResult.map((courseResult: any) => {
         const iconData = courseResult.icon.data
-        const iconUrl = iconData ? iconData[0].attributes.formats.medium.url : null
+        const iconUrl = iconData ? iconData[0]?.attributes.formats.medium.url : null
 
         return {
             id: courseResult.id,
