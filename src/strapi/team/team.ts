@@ -55,7 +55,7 @@ export const useTeam = (): BoardAndMembers => {
     const team = teamResult.map( (memberResult: any) => ({
         name: memberResult.name,
         role: memberResult.role,
-        imageUrl: `${process.env.REACT_APP_BACKEND_URL}${memberResult.image.data[0].attributes.formats.medium.url}`,
+        imageUrl: memberResult.image.data[0].attributes.formats.medium.url,
         management: memberResult.management,
     })) as MemberModel[]
 
