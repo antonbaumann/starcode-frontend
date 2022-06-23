@@ -3,9 +3,13 @@
 .button {
     font-size: 120%;
     padding: 0.5em 1em;
-    background-color: $light-grey;
-    color: $blue;
     border-radius: 0.9em;
     display: inline-block;
     cursor: pointer;
+    background-color: $light-grey;
+    color: $blue;
+
+    &:hover {
+       font-weight: bold;
+    }
 }

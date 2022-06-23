@@ -43,10 +43,12 @@
         }
 
         .button {
-            margin-top: 220px;
+            margin-top: 400px;
             background-color: $blue;
             color: white;
             z-index: 3;
+
+            font-size: 160%;
         }
 
         .card {
