@@ -69,7 +69,8 @@
 
     &.collapsed {
         max-width: 500px;
-
+        cursor: pointer;
+        
         .course-body {
             display: none;
         }
