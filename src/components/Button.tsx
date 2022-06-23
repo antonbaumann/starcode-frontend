@@ -4,14 +4,15 @@ import classNames from 'classnames'
 type ButtonProps = {
   text: string
   className?: string
-  children?: React.ReactNode
+  icon?: React.ReactNode
   onClick?: () => void
 }
 
-const Button = ({ text, className, onClick }: ButtonProps) => {
+const Button = ({ text, className, icon, onClick }: ButtonProps) => {
   return (
     <div className={classNames('button', className)} onClick={onClick}>
-      {text}
+      {icon && <div className="icon-wrapper">{icon}</div>}
+      <span>{text}</span>
     </div>
   )
 }

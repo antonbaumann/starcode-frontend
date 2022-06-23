@@ -5,9 +5,14 @@
   border-radius: 0.9em;
   color: $blue;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
   font-size: 120%;
   padding: 0.5em 1em;
+
+  .icon-wrapper {
+    margin-right: 0.4em;
+  }
 
   &:hover {
     font-weight: bold;

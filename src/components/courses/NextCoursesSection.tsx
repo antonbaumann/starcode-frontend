@@ -5,6 +5,7 @@ import Button from '../Button'
 import ArrowDownIcon from '../ArrowDownIcon'
 import { useState } from 'react'
 import classNames from 'classnames'
+import { ReactComponent as FilterIcon } from '../../assets/svg/icons/filter.svg'
 
 type NextCoursesSectionProps = {
   cities: string[]
@@ -44,6 +45,7 @@ const NextCoursesSection = ({
         <div className="filter-container">
           <Button
             text={'Stadt' + formatCityButtonText(selectedCity)}
+            icon={<FilterIcon width="0.9em" height="0.9em" />}
             className="filter-button"
             onClick={() => setShowOptions(!showOptions)}
           />
