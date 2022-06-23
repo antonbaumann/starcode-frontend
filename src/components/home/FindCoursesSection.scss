@@ -7,10 +7,10 @@
     justify-content: space-between;
     background-color: $blue;
     overflow: hidden;
+    min-height: calc(100vh - 3em);
 
     .content {
         margin-top: 3em;
-        margin-bottom: 2em;
         color: white;
         width: 40vw;
         min-width: 400px;
@@ -28,14 +28,16 @@
     }
 
     .GirlsImageOnCirlce {
-        margin-bottom: -3em;
         position: relative;
         width: 45vw;
         height: 45vw;
-        min-width: 300px;
-        min-height: 300px;
+        min-width: 400px;
+        min-height: 400px;
         overflow: hidden;
         z-index: 9;
+        align-self: flex-end;
+
+        transition: min-width 70ms, min-height 70ms;
         
         .gradient-circle-home {
             position: absolute;
@@ -55,12 +57,18 @@
 
     @media only screen and (max-width: $mobile-breakpoint) {
         .content {
+            margin-top: 2em;
             width: 40vw;
             min-width: 300px;
 
             .section-title {
                 font-size: 350%;
             }
+        }
+
+        .GirlsImageOnCirlce {
+            min-width: 55vw;
+            min-height: 55vw;
         }
     }
 
@@ -82,9 +90,10 @@
 
         .GirlsImageOnCirlce {
             position: relative;
-            width: 80vw;
-            height: 80vw;
+            width: 90vw;
+            height: 90vw;
             overflow: hidden;
+            align-self: unset;
         }
     }
 }
