@@ -12,7 +12,7 @@ const Button = ({ text, className, icon, onClick }: ButtonProps) => {
   return (
     <div className={classNames('button', className)} onClick={onClick}>
       {icon && <div className="icon-wrapper">{icon}</div>}
-      <div className='text'>{text}</div>
+      <div className="text">{text}</div>
     </div>
   )
 }
