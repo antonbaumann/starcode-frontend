@@ -1,15 +1,14 @@
-@import '../variables';
+@import "../variables";
 
 .gender-explanation {
-    padding: 0.5em 0.5em;
-    margin: 2em auto;
-    font-size: 90%;
-    text-align: justify;
-    border: 1px solid black;
+  border: 1px solid black;
+  font-size: 90%;
+  margin: 2em auto;
+  padding: 0.5em;
+  text-align: justify;
+  width: 60%;
 
-    width: 60%;
-
-    @media screen and (max-width: $content-breakpoint) {
-        width: calc(100vw - 2em);
-    }
+  @media screen and (max-width: $content-breakpoint) {
+    width: calc(100vw - 2em);
+  }
 }

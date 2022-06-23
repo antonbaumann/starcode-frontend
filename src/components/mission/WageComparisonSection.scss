@@ -1,42 +1,42 @@
-@import '../../variables';
+@import "../../variables";
 
 .wage-comparison-section {
-    margin-top: 5em;
+  margin-top: 5em;
 
+  .content {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .text {
+      color: white;
+      font-size: 130%;
+      font-weight: bold;
+      line-height: 1.2;
+      width: 220px;
+    }
+
+    .circle {
+      height: 500px;
+      width: 500px;
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
     .content {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
 
-        .text {
-            color: white;
-            line-height: 1.2;
-            font-size: 130%;
-            font-weight: bold;
-            width: 220px;
-        }
+      .circle {
+        height: 90vw;
+        width: 90vw;
+      }
 
-        .circle {
-            height: 500px;
-            width: 500px;
-        }
+      .text {
+        margin-top: 1em;
+        max-width: 90vw;
+      }
     }
-
-    @media only screen and (max-width: $content-breakpoint) {
-        .content {
-            flex-direction: column-reverse;
-            align-items: center;
-
-            .circle {
-                width: 90vw;
-                height: 90vw;
-            }
-
-            .text {
-                max-width: 90vw;
-                margin-top: 1em;
-            }
-        }
-    }
+  }
 }

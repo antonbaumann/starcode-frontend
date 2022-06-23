@@ -1,57 +1,57 @@
-@import "../../variables.scss";
+@import "../../variables";
 
 .why-starcode {
-    position: relative;
-    padding-top: 2em;
-    background-color: $light-grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow-x: hidden;
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding-top: 2em;
+  position: relative;
+
+  .content {
+    padding: 2em;
+    width: 400px;
+
+    .section-title {
+      font-size: 250%;
+    }
+
+    p {
+      font-size: 120%;
+      margin-bottom: 1.5em;
+      margin-top: 1.5em;
+      text-align: justify;
+    }
+  }
+
+  .GirlsImage {
+    display: block;
+    object-fit: scale-down;
+    width: 600px;
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    .GirlsImage {
+      bottom: 0;
+      position: absolute;
+      right: -5vw;
+      width: 50vw;
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    align-items: center;
+    flex-direction: column;
 
     .content {
-        width: 400px;
-        padding: 2em;
-
-        .section-title {
-            font-size: 250%;
-        }
-
-        p {
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
-            font-size: 120%;
-            text-align: justify;
-        }
+      width: 80vw;
     }
 
     .GirlsImage {
-        display: block;
-        width: 600px;
-        object-fit: scale-down;
+      position: relative;
+      right: 0;
+      width: 80vw;
     }
-
-    @media only screen and (max-width: $mobile-breakpoint) {
-        .GirlsImage {
-            position: absolute;
-            bottom: 0;
-            right: -5vw;
-            width: 50vw;
-        }
-    }
-
-    @media only screen and (max-width: $content-breakpoint) {
-        flex-direction: column;
-        align-items: center;
-
-        .content {
-            width: 80vw;
-        }
-
-        .GirlsImage {
-            position: relative;
-            width: 80vw;
-            right: 0;
-        }
-    }
+  }
 }

@@ -1,29 +1,28 @@
-@import "../../variables.scss";
+@import "../../variables";
 
 .course-list-section {
-    position: relative;
-    padding: 2em 2em;
-    background-color: $dark-blue;
+  background-color: $dark-blue;
+  min-height: 550px;
+  padding: 2em;
+  position: relative;
 
-    min-height: 550px;
+  .course {
+    margin-bottom: 1em;
+    z-index: 10;
 
-    .course {
-        z-index: 10;
-        margin-bottom: 1em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    .girl-image {
-        position: absolute;
-        width: 30vw;
-        right: 0;
-        bottom: 0;
-    }
+  .girl-image {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 30vw;
+  }
 
-    @media only screen and (max-width: $content-breakpoint) {
-        padding: 2em 0.5em;
-    }
+  @media only screen and (max-width: $content-breakpoint) {
+    padding: 2em 0.5em;
+  }
 }

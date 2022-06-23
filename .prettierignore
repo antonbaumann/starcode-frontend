@@ -1,0 +1,14 @@
+*.html
+*.json
+*.md
+*.scss
+*.svg
+*.yml
+*.css.map
+
+.cache
+public
+node_modules
+build
+
+.stylelintrc

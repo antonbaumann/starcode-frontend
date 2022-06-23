@@ -1,77 +1,72 @@
-@import '../../variables';
+@import "../../variables";
 
 .how-you-can-help-section {
-    padding-top: 3em;
+  background: linear-gradient(to bottom, #f78de5 0%, #a53ec4 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 3em;
+  position: relative;
 
-    overflow: hidden;
-
-    position: relative;
-    background: linear-gradient(to bottom, #F78DE5 0%, #A53EC4 100%);
-
+  .content {
+    color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50vw;
+    z-index: 2;
+
+    .section-title {
+      font-size: 350%;
+    }
+
+    .description {
+      margin-top: 1em;
+    }
+  }
+
+  .girl-image {
+    margin-top: -3em;
+    z-index: 1;
+  }
+
+  .circle {
+    height: 600px;
+    position: absolute;
+    right: -200px;
+    top: -200px;
+    width: 600px;
+    z-index: 0;
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
 
     .content {
-        z-index: 2;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        width: 50vw;
+      .section-title {
+        font-size: 250%;
+      }
 
-        .section-title {
-            font-size: 350%;
-        }
-
-        .description {
-            margin-top: 1em;
-        }
+      width: 90vw;
     }
 
     .girl-image {
-        z-index: 1;
-        margin-top: -3em;
+      margin-bottom: -10vw;
+      margin-left: auto;
+      margin-top: 3em;
+      width: 70vw;
     }
 
     .circle {
-        z-index: 0;
-        position: absolute;
-        width: 600px;
-        height: 600px;
-        top: -200px;
-        right: -200px;
+      bottom: -50vw;
+      height: 150vw;
+      right: -50vw;
+      top: unset;
+      transform: rotate(180deg);
+      width: 150vw;
     }
-
-    @media only screen and (max-width: $content-breakpoint) { 
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        padding-right: 0;
-
-
-        .content {
-            .section-title {
-                font-size: 250%;
-            }
-
-            width: 90vw;
-        }
-
-        .girl-image {
-            width: 70vw;
-            margin-left: auto;
-            margin-bottom: -10vw;
-            margin-top: 3em;
-        }
-
-        .circle {
-            width: 150vw;
-            height: 150vw;
-            bottom: -50vw;
-            right: -50vw;
-            top: unset;
-
-            transform: rotate(180deg);
-        }
-    }
+  }
 }

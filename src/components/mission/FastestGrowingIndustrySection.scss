@@ -1,74 +1,72 @@
 @import "../../variables";
 
 .fastest-growing-industry-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding: 0;
 
-    padding: 0;
+  .arrow-image {
+    width: 40vw;
+  }
 
+  .text-on-graph {
+    height: 45vw;
+    position: relative;
+    width: 45vw;
+
+    .circle {
+      background-color: #f7d78d;
+      border-radius: 50%;
+      height: 40vw;
+      position: absolute;
+      width: 40vw;
+    }
+
+    .graph-image {
+      height: auto;
+      position: absolute;
+      top: -5vw;
+      width: 45vw;
+    }
+
+    .text {
+      color: white;
+      font-size: 2.6vw;
+      font-weight: bold;
+      left: -2vw;
+      line-height: 1.3;
+      position: absolute;
+      top: 15vw;
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
     .arrow-image {
-        width: 40vw;
+      display: none;
     }
 
     .text-on-graph {
-        width: 45vw;
-        height: 45vw;
+      height: 90vw;
+      margin: 0 auto;
+      width: 90vw;
 
-        position: relative;
+      .circle {
+        height: 85vw;
+        width: 85vw;
+      }
 
-        .circle {
-            position: absolute;
-            width: 40vw;
-            height: 40vw;
-            background-color: #F7D78D;
-            border-radius: 50%;
-        }
+      .graph-image {
+        height: auto;
+        top: -5vw;
+        width: 90vw;
+      }
 
-        .graph-image {
-            position: absolute;
-            width: 45vw;
-            height: auto;
-            top: -5vw;
-        }
-
-        .text {
-            top: 15vw;
-            left: -2vw;
-            position: absolute;
-            color: white;
-            font-weight: bold;
-            font-size: 2.6vw;
-            line-height: 1.3;
-        }
+      .text {
+        font-size: 5vw;
+        top: 32vw;
+      }
     }
-
-    @media only screen and (max-width: $content-breakpoint) {
-        .arrow-image {
-            display: none;
-        }
-
-        .text-on-graph {
-            margin: 0 auto;
-            width: 90vw;
-            height: 90vw;
-
-            .circle {
-                width: 85vw;
-                height: 85vw;
-            }
-
-            .graph-image {
-                width: 90vw;
-                height: auto;
-                top: -5vw;
-            }
-
-            .text {
-                top: 32vw;
-                font-size: 5vw;
-            }
-        }
-    }
+  }
 }

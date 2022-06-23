@@ -1,139 +1,135 @@
-@import "../../variables.scss";
-
+@import "../../variables";
 
 .next-courses-section {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 3.6em);
+  padding: 0;
+
+  .content {
+    align-items: center;
+    background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-grow: 2;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 2em;
 
-    min-height: calc(100vh - 3.6em);
-    padding: 0;
-
-    .content {
-        height: 100%;
-
-        padding: 0 2em;
-
-        display: flex;
-        flex-grow: 2;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-
-        .title {
-            margin-top: 1.5em;
-            font-size: 400%;
-            text-align: center;
-        }
-
-        .filter-container {
-            width: 100%;
-            margin-top: 6em;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-            .filter-button {
-                margin-top: 1em;
-                margin-right: 1em;
-                margin-left: 1em;
-                background-color: $blue;
-                color: white;
-            }
-
-            .reset-button {
-                margin-top: 1em;
-            }
-        }
-
-        .options-container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-            .option-button {
-                font-size: 100%;
-                margin-top: 1em;
-                margin-left: 0.5em;
-                margin-right: 0.5em;
-                background-color: $blue;
-                color: white;
-            }
-
-            &.hidden {
-                .option-button {
-                    visibility: hidden;
-                }
-            }
-        }
-
-        .all-courses-indicator {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 2em;
-            margin-bottom: 2em;
-            cursor: pointer;
-            
-            p {
-                font-size: 130%;
-                margin-bottom: 1em;
-            }
-        }
+    .title {
+      font-size: 400%;
+      margin-top: 1.5em;
+      text-align: center;
     }
+
+    .filter-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 6em;
+      width: 100%;
+
+      .filter-button {
+        background-color: $blue;
+        color: white;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+      }
+
+      .reset-button {
+        margin-top: 1em;
+      }
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+
+      .option-button {
+        background-color: $blue;
+        color: white;
+        font-size: 100%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 1em;
+      }
+
+      &.hidden {
+        .option-button {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .all-courses-indicator {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2em;
+      margin-top: 2em;
+
+      p {
+        font-size: 130%;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  .image-container {
+    align-items: center;
+    background-color: blue;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    overflow: hidden;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    .image-container {
+      flex-grow: 2;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    flex-direction: column-reverse;
+    height: unset;
 
     .image-container {
-        background-color: blue;
-        flex-grow: 1;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        
-        img {
-            width: 80%;
-        }
+      display: none; // todo
+      flex-grow: unset;
+      height: 70vh;
+
+      img {
+        max-width: 400px;
+        width: 70%;
+      }
     }
 
-    @media only screen and (max-width: $mobile-breakpoint) {
-        .image-container {
-            flex-grow: 2;
+    .content {
+      .title {
+        font-size: 300%;
+      }
 
-            img {
-                width: 100%;
-            }
+      .filter-container {
+        .filter-button,
+        .reset-button {
+          font-size: 100%;
         }
+      }
     }
-
-    @media only screen and (max-width: $content-breakpoint) {
-        height: unset;
-        flex-direction: column-reverse;
-
-        .image-container {
-            display: none; // todo
-
-            height: 70vh;
-            flex-grow: unset;
-
-            img {
-                width: 70%;
-                max-width: 400px;
-            }
-        }
-
-        .content {
-            .title { 
-                font-size: 300%;
-            }
-            
-            .filter-container {
-                .filter-button, .reset-button {
-                    font-size: 100%;
-                }
-            }
-        }
-    }
+  }
 }

@@ -1,44 +1,42 @@
-@import '../../variables';
+@import "../../variables";
 
 .lets-change-together-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: calc(100vh - 3.6em);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 3.6em);
 
+  .section-title {
+    color: white;
+    font-size: 500%;
+    margin-top: 9rem;
+  }
+
+  .arrow-container {
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 4rem;
+
+    @keyframes pulse {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(1.5em);
+      }
+    }
+  }
+
+  @media screen and (max-width: $content-breakpoint) {
     .section-title {
-        color: white;
-        font-size: 500%;
-
-        margin-top: 9rem;
+      font-size: 350%;
+      margin-top: 4rem;
     }
-
-    .arrow-container {
-        margin-bottom: 4rem;
-
-        animation-name: pulse;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-delay: 2s;
-
-        @keyframes pulse {
-            0% {
-                transform: translateY(0);
-            }
-  
-            100% {
-                transform: translateY(1.5em);
-            }
-        }
-    }
-
-    @media screen and (max-width: $content-breakpoint) {
-        .section-title {
-            margin-top: 4rem;
-            font-size: 350%;
-        }
-    }
+  }
 }

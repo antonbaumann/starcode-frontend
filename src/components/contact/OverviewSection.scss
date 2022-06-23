@@ -1,58 +1,58 @@
-@import '../../variables';
+@import "../../variables";
 
 .contact-overview-section {
-    padding-top: 3em;
-    padding-bottom: 3em;
+  align-items: center;
+  background: linear-gradient(to right, #d5a4c6, #f658c3);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+  padding-top: 3em;
 
-    background: linear-gradient(to right, #d5a4c6, #F658C3);
+  .content {
+    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90vw;
+    width: 1000px;
 
-    .content {
-        width: 1000px;
-        max-width: 90vw;
+    .text {
+      .section-title {
+        font-size: 200%;
+      }
+
+      .table {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: white;
+        flex-direction: column;
+        margin-top: 2em;
 
-        .text {
-            .section-title {
-                font-size: 200%;
-            }
-
-            .table {
-                margin-top: 2em;
-                display: flex;
-                flex-direction: column;
-
-                .table-row {
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 2em;
-                }
-
-                .key {
-                    font-weight: bold;
-                    width: 100px;
-                }
-            }
+        .table-row {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 2em;
         }
-    }
 
-    @media only screen and (max-width: $content-breakpoint) {
-        .content {
-            flex-direction: column;
-
-            .image {
-                margin-top: 2em;
-                svg {
-                    width: 50vw;
-                    max-width: 300px;
-                    height: auto;
-                }
-            }
+        .key {
+          font-weight: bold;
+          width: 100px;
         }
+      }
     }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    .content {
+      flex-direction: column;
+
+      .image {
+        margin-top: 2em;
+
+        svg {
+          height: auto;
+          max-width: 300px;
+          width: 50vw;
+        }
+      }
+    }
+  }
 }

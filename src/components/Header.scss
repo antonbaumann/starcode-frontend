@@ -1,90 +1,90 @@
-@import "../variables.scss";
+@import "../variables";
 
 .header {
-    position: sticky;  
-    z-index: 1000; 
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1em 4em 1em 2em;
-    background-color: $header-background-color;
+  align-items: baseline;
+  background-color: $header-background-color;
+  display: flex;
+  flex-direction: row;
+  font-family: "Futura Medium", sans-serif;
+  justify-content: space-between;
+  left: 0;
+  padding: 1em 4em 1em 2em;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+
+  .assitive-text {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    width: 1px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    font-family: 'Futura Medium';
 
-    .assitive-text {
-        height: 1px; 
-        width: 1px; 
-        position: absolute; 
-        overflow: hidden; 
-        top: -10px;
+    li {
+      margin-left: 4em;
+
+      a {
+        color: white;
+        font-size: 110%;
+        text-decoration: none;
+      }
+
+      &.secondary {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 1em 0;
+
+    .first-row-mobile {
+      align-items: baseline;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 1em;
+      width: 100%;
     }
 
     .menu-icon {
-        display: none;
+      display: block;
     }
 
     .menu {
-        display: flex;
-        flex-direction: row;
-        
-        li {
-            margin-left: 4em;
+      background-color: white;
+      display: none;
+      width: 100vw;
 
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 110%;
-            }
+      li {
+        margin-left: 1em;
+        padding: 0.4em 0;
 
-            &.secondary {
-                display: none;
-            }
+        a {
+          color: black;
+          font-size: 200%;
         }
+
+        &.secondary {
+          display: block;
+        }
+      }
+
+      &.open {
+        display: block;
+      }
     }
-
-    @media only screen and (max-width: $mobile-breakpoint) {
-        flex-direction: column;
-        align-items: center;
-        padding: 1em 1em 0 1em;
-
-        .first-row-mobile {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-            width: 100%;
-            padding-bottom: 1em;
-        }
-
-        .menu-icon {
-            display: block;
-        }
-        
-        .menu {
-            display: none;
-            width: 100vw;
-            background-color: white;
-
-            li {
-                margin-left: 1em;
-                padding: 0.4em 0;
-
-                a {
-                    font-size: 200%;
-                    color: black;
-                }
-
-                &.secondary {
-                    display: block;
-                }
-            }
-
-            &.open {
-                display: block;
-            }
-        }
-    }
+  }
 }

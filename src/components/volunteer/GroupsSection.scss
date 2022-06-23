@@ -1,79 +1,79 @@
-@import '../../variables';
+@import "../../variables";
 
 $bg-color-inactive: #eacbe6;
-$bg-color-active: #ED83E1;
+$bg-color-active: #ed83e1;
 
 .groups-section {
-    padding-top: 3em;
-    padding-bottom: 2em;
-    background-color: $dark-blue;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    
-    .section-title {
-        color: white;
-        font-size: 200%;
+  background-color: $dark-blue;
+  padding-bottom: 2em;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 3em;
+
+  .section-title {
+    color: white;
+    font-size: 200%;
+  }
+
+  .groups-card {
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 1em;
+    padding: 1em;
+
+    .groups-selector {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .group-selector-item {
+        align-items: center;
+        background-color: $bg-color-inactive;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        height: 70px;
+        justify-content: center;
+        margin: 0 1em;
+        width: 70px;
+
+        &.active {
+          background-color: $bg-color-active;
+        }
+
+        img {
+          height: 50%;
+        }
+      }
     }
+
+    .content {
+      margin-top: 1em;
+
+      h3 {
+        font-size: 130%;
+        font-weight: bold;
+      }
+
+      p {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    padding: 1em 5vw;
 
     .groups-card {
-        margin-top: 1em;
-        background-color: white;
-        border-radius: 3px;
-        padding: 1em;
+      .groups-selector {
+        justify-content: space-between;
 
-        .groups-selector {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .group-selector-item {
-                margin: 0 1em;
-                height: 70px;
-                width: 70px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-
-                background-color: $bg-color-inactive;
-
-                &.active {
-                    background-color: $bg-color-active;
-                }
-                
-                img {
-                    height: 50%;
-                }
-            }
+        .group-selector-item {
+          height: 50px;
+          margin: 0.3em;
+          width: 50px;
         }
-
-        .content {
-            margin-top: 1em;
-
-            h3 {
-                font-size: 130%;
-                font-weight: bold;
-            }
-
-            p {
-                margin-top: 1em;
-            }
-        }
+      }
     }
-
-    @media only screen and (max-width: $content-breakpoint) { 
-        padding: 1em 5vw;
-
-        .groups-card {
-            .groups-selector {
-                justify-content: space-between;
-                .group-selector-item {
-                    width: 50px;
-                    height: 50px;
-                    margin: 0.3em;
-                }
-            }
-        }
-    }
+  }
 }

@@ -1,15 +1,15 @@
-@import "../variables.scss";
+@import "../variables";
 
 .button {
-    font-size: 120%;
-    padding: 0.5em 1em;
-    border-radius: 0.9em;
-    display: inline-block;
-    cursor: pointer;
-    background-color: $light-grey;
-    color: $blue;
+  background-color: $light-grey;
+  border-radius: 0.9em;
+  color: $blue;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 120%;
+  padding: 0.5em 1em;
 
-    &:hover {
-       font-weight: bold;
-    }
+  &:hover {
+    font-weight: bold;
+  }
 }

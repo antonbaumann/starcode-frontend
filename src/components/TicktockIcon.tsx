@@ -1,12 +1,10 @@
 type TicktockIconProps = {
-    stroke?: string;
-    height?: string;
+  stroke?: string
+  height?: string
 }
 
-const TicktockIcon = ({stroke, height}: TicktockIconProps) => {
-    return (
-        <div></div>
-    )
+const TicktockIcon = ({ stroke, height }: TicktockIconProps) => {
+  return <div></div>
 }
 
 export default TicktockIcon

@@ -1,28 +1,25 @@
 .event {
-    max-width: 80vw;
-    width: 450px;
-    font-family: 'Video Cond', monospace;
-    padding: 0.3em;
-    margin-bottom: 1em;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Video Cond", monospace;
+  margin-bottom: 1em;
+  max-width: 80vw;
+  padding: 0.3em;
+  width: 450px;
 
-    background-color: white;
+  .event-date {
+    font-size: 300%;
+  }
 
+  .event-text {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    margin-left: 1em;
 
-    .event-date {
-        font-size: 300%;
+    .event-location {
+      font-size: 150%;
     }
-
-    .event-text {
-        margin-left: 1em;
-
-        display: flex;
-        flex-direction: column;
-
-        .event-location {
-            font-size: 150%;
-        }
-    }
+  }
 }

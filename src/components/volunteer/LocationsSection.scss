@@ -1,46 +1,45 @@
-@import "../../variables.scss";
+@import "../../variables";
 
 .locations-section {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background-color: $dark-blue;
-    color: white;
+  align-items: center;
+  background-color: $dark-blue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2em;
+  padding-top: 2em;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  .map-svg {
+    height: auto;
+    width: 30vw;
+  }
 
-    .map-svg {
-        height: auto;
-        width: 30vw;
+  .content {
+    width: 350px;
+
+    .section-title {
+      font-size: 200%;
     }
+
+    .description {
+      margin-top: 1em;
+    }
+  }
+
+  @media only screen and (max-width: $content-breakpoint) {
+    flex-direction: column-reverse;
+    padding-bottom: 5em;
+    padding-top: 5em;
 
     .content {
-        width: 350px;
-
-        .section-title {
-            font-size: 200%;
-        }
-
-        .description {
-            margin-top: 1em;
-        }
+      width: 90vw;
     }
 
-    @media only screen and (max-width: $content-breakpoint) { 
-        padding-top: 5em;
-        padding-bottom: 5em;
-        flex-direction: column-reverse;
-
-        .content {
-            width: 90vw;
-        }
-
-        .map-svg {
-            margin-top: 2em;
-            width: 300px;
-            max-width: 90vw;
-        }
+    .map-svg {
+      margin-top: 2em;
+      max-width: 90vw;
+      width: 300px;
     }
+  }
 }

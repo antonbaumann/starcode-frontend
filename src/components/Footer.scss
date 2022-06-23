@@ -1,36 +1,35 @@
-@import "../variables.scss";
+@import "../variables";
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0;
 
-    margin: 3em 0em;
+  .newsletter-button {
+    margin: 1.5em 0;
+  }
 
-    .newsletter-button {
-        margin: 1.5em 0;
+  .social-media {
+    margin-bottom: 2em;
+
+    svg {
+      margin: 0 0.5em;
     }
+  }
 
-    .social-media {
-        margin-bottom: 2em;
-
-        svg {
-            margin: 0 0.5em;
-        }
+  .footer-menu {
+    a {
+      margin: 0 2em;
+      text-decoration: none;
     }
+  }
 
+  @media only screen and (max-width: $content-breakpoint) {
     .footer-menu {
-        a {
-            text-decoration: none;
-            margin: 0 2em;
-        }
+      a {
+        margin: 0 0.5em;
+      }
     }
-
-    @media only screen and (max-width: $content-breakpoint) {
-        .footer-menu {
-            a {
-                margin: 0 0.5em;
-            }
-        }
-    }
+  }
 }

@@ -1,6 +1,7 @@
 {
   "name": "starcode-frontend-ts",
   "version": "0.1.0",
+  "author": "Anton Baumann <anton@antonbaumann.com>",
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
@@ -29,7 +30,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write .",
+    "prettierlint": "prettier --check .",
+    "stylelint": "stylelint 'src/**/*.scss'",
+    "lint": "yarn prettierlint && yarn eslint && yarn stylelint",
+    "fix": "yarn prettier && yarn eslint --fix && yarn stylelint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +54,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-order": "^5.0.0"
   }
 }
