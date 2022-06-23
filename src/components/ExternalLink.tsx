@@ -1,3 +1,6 @@
+import './ExternalLink.scss'
+import classNames from 'classnames'
+
 type ExternalLinkProps = {
   to: string
   target?: string
@@ -16,7 +19,7 @@ const ExternalLink = ({
       href={to}
       target={target}
       rel="noopener noreferrer"
-      className={className}
+      className={classNames(className, 'external-link')}
     >
       {children}
     </a>
