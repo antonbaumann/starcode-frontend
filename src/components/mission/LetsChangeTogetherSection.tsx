@@ -5,13 +5,13 @@ import ArrowDownIcon from '../ArrowDownIcon'
 const LetsChangeTogetherSection = () => {
 
     const handleArrowClick = () => {
-        const arrowIcon = document.getElementsByClassName('arrow-icon')[0]
-        const bounds = arrowIcon.getBoundingClientRect();
-        window.scroll({
-            top: bounds.bottom + window.scrollY, 
-            left: 0, 
-            behavior: 'smooth' 
-          });
+        // const arrowIcon = document.getElementsByClassName('arrow-icon')[0]
+        // const bounds = arrowIcon.getBoundingClientRect();
+        // window.scroll({
+        //     top: bounds.bottom + window.scrollY, 
+        //     left: 0, 
+        //     behavior: 'smooth' 
+        //   });
     }
 
     return (

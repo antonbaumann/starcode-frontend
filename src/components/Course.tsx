@@ -5,7 +5,6 @@ import {toDayMonth, toGermanLetterDate} from '../util/date'
 import CollapseButton from './CollapseButton'
 import Button from './Button'
 import { CourseModel } from '../strapi/courses/courses'
-import { Link } from 'react-router-dom'
 import ExternalLink from './ExternalLink'
 
 type CourseProps = {

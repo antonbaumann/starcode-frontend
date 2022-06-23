@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 80vh;
+    min-height: calc(100vh - 3.6em);
 
     .section-title {
         color: white;
@@ -17,8 +17,21 @@
     .arrow-container {
         margin-bottom: 4rem;
 
-        .arrow-icon {
-            cursor: pointer;
+        animation-name: pulse;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+        @keyframes pulse {
+            0% {
+                transform: translateY(0);
+            }
+  
+            100% {
+                transform: translateY(1.5em);
+            }
         }
     }
 

@@ -16,6 +16,7 @@ const UpcomingEventsSection = () => {
                 Du hast Lust einen Ableger in deiner Stadt zu gründen? Dann schau doch mal hier!</p>
             </div>
             <div className="event-list">
+                <SectionTitle className='event-list-title'>Upcoming Events</SectionTitle>
                 {courses.slice(0, 5).map(course => <Event 
                     key={course.id} 
                     date={course.startDate} 
