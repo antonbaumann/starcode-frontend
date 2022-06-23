@@ -1,5 +1,3 @@
-import { delimiter } from 'path'
-
 const germanDays = [
   'Sonntag',
   'Montag',
