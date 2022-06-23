@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "author": "Anton Baumann <anton@antonbaumann.com>",
   "private": true,
-  "engines" : { 
-    "node": "16.x"
-  },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.14.1",
