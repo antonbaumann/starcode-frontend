@@ -21,8 +21,13 @@ const Course = ({
     course,
     onToggleCollapse,
 }: CourseProps) => {
+
+    const handleCourseBoxClick = () => {
+        if (isCollapsed) onToggleCollapse()
+    }
+
     return (
-        <div className={classNames('course', className, {'collapsed': isCollapsed})}>
+        <div className={classNames('course', className, {'collapsed': isCollapsed})} onClick={handleCourseBoxClick}>
             <div className='course-header'>
                 <div className='chatbot-icon-container'>
                     <ChatbotIcon height="2.5em" stroke="#0821DA"/>
