@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet'
+import { useEffect } from 'react'
 
 type PageProps = {
   title: string
@@ -6,14 +6,12 @@ type PageProps = {
 }
 
 const Page = ({ title, children }: PageProps) => {
-  return (
-    <>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
-      {children}
-    </>
-  )
+
+  useEffect(() => {
+    document.title = title
+  }, [title])
+
+  return <>{children}</>
 }
 
 export default Page
