@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks'
 export type SocialMediaUrlsModel = {
   instagramUrl: string
   facebookUrl: string
+  linkedinUrl: string
   newsletterUrl: string
 }
 
@@ -14,6 +15,7 @@ const SOCIAL_QUERY = gql`
         attributes {
           instagramUrl
           facebookUrl
+          linkedinUrl
           newsletterUrl
         }
       }
@@ -27,6 +29,7 @@ export const useSocialMediaUrls = (): SocialMediaUrlsModel => {
   const empty = {
     instagramUrl: '',
     facebookUrl: '',
+    linkedinUrl: '',
     newsletterUrl: '',
   }
 
