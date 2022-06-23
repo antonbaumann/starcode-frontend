@@ -6,6 +6,11 @@ export type MemberModel = {
   role: string
   imageUrl: string
   management?: boolean
+  instagramUrl?: string
+  facebookUrl?: string
+  linkedinUrl?: string
+  githubUrl?: string
+  email?: string
 }
 
 export type BoardAndMembers = {
@@ -22,6 +27,11 @@ const TEAM_QUERY = gql`
             name
             role
             management
+            instagramUrl
+            facebookUrl
+            linkedinUrl
+            githubUrl
+            email
             image {
               data {
                 attributes {
@@ -57,6 +67,11 @@ export const useTeam = (): BoardAndMembers => {
     role: memberResult.role,
     imageUrl: memberResult.image.data[0].attributes.formats.medium.url,
     management: memberResult.management,
+    instagramUrl: memberResult.instagramUrl,
+    facebookUrl: memberResult.facebookUrl,
+    linkedinUrl: memberResult.linkedinUrl,
+    githubUrl: memberResult.githubUrl,
+    email: memberResult.email,
   })) as MemberModel[]
 
   return {

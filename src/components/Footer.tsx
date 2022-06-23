@@ -2,8 +2,9 @@ import './Footer.scss'
 import Button from './Button'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
-import FacebookIcon from './FacebookIcon'
-import InstagramIcon from './InstagramIcon'
+import { ReactComponent as InstagramLogo } from '../assets/svg/icons/instagram.svg'
+import { ReactComponent as FacebookLogo } from '../assets/svg/icons/facebook.svg'
+import { ReactComponent as LinkedinLogo } from '../assets/svg/icons/linkedin.svg'
 import { useSocialMediaUrls } from '../strapi/social/social'
 import ExternalLink from './ExternalLink'
 
@@ -22,10 +23,13 @@ const Footer = ({ darkMode }: FooterProps) => {
       </ExternalLink>
       <div className="social-media">
         <ExternalLink to={socialMediaUrls.facebookUrl} target="_blank">
-          <FacebookIcon height="2em" stroke="#000" />
+          <FacebookLogo height="2em" width="2em" stroke="#000" />
         </ExternalLink>
         <ExternalLink to={socialMediaUrls.instagramUrl} target="_blank">
-          <InstagramIcon height="2em" stroke="#000" />
+          <InstagramLogo height="2em" width="2em" stroke="#000" />
+        </ExternalLink>
+        <ExternalLink to={socialMediaUrls.linkedinUrl} target="_blank">
+          <LinkedinLogo height="2em" width="2em" stroke="#000" />
         </ExternalLink>
       </div>
       <div className="footer-menu">
