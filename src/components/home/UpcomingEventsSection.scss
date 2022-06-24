@@ -41,7 +41,7 @@
   }
 
   @media only screen and (max-width: $mobile-breakpoint) {
-    padding: 5em 3em;
+    padding: 5em 1em;
   }
 
   @media only screen and (max-width: $content-breakpoint) {
@@ -50,11 +50,17 @@
 
     .event-list {
       margin-top: 3em;
+      width: 100%;
+
+      .event {
+        max-width: unset;
+        width: auto;
+      }
     }
 
     .location {
       margin: 0;
-      width: 80vw;
+      width: auto;
     }
   }
 }
