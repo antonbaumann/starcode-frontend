@@ -50,12 +50,15 @@ const WageComparisonSection = () => {
 
   useEffect(() => {
     var observer = new IntersectionObserver(
-      function (entries) {
+      (entries) => {
         if (entries[0].isIntersecting === true) {
-          setCoinAnimationStarted(true)
+          const timer = setTimeout(() => {
+            setCoinAnimationStarted(true)
+          }, 300)
+          return () => clearTimeout(timer)
         }
       },
-      { threshold: [1] },
+      { threshold: [0.6] },
     )
 
     observer.observe(document.getElementById('coin-stack-row-id')!)
