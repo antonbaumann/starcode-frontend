@@ -1,4 +1,3 @@
-import './ExternalLink.scss'
 import classNames from 'classnames'
 
 type ExternalLinkProps = {

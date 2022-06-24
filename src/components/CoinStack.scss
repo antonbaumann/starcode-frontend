@@ -1,0 +1,15 @@
+.coin-stack {
+  display: flex;
+  flex-direction: column;
+
+  .coin-top {
+    height: auto;
+    width: 2em;
+  }
+
+  .coin-base {
+    height: auto;
+    margin-top: -0.5em;
+    width: 2em;
+  }
+}

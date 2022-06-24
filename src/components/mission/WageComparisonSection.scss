@@ -17,9 +17,51 @@
       width: 220px;
     }
 
-    .circle {
+    .coins-on-circle {
       height: 500px;
+      position: relative;
       width: 500px;
+
+      .circle {
+        height: 500px;
+        position: absolute;
+        width: 500px;
+      }
+
+      .coin-stack-row {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        height: 400px;
+        justify-content: center;
+        position: absolute;
+        width: 500px;
+
+        .highlight {
+          span {
+            color: #efda8b !important;
+          }
+
+          path,
+          ellipse {
+            stroke: #efda8b !important;
+          }
+        }
+
+        .coins-text {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: white;
+            font-size: 130%;
+            font-weight: bold;
+            margin-top: 0.5em;
+          }
+        }
+      }
     }
   }
 

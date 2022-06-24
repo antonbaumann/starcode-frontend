@@ -20,7 +20,7 @@ const DonateSection = () => {
           Chancen im technischen Bereich, hilft bei der Entwicklung neuer
           Programme und bietet kostenlose und erstklassige Betreuung der
           Teilnehmerinnen. Oder <Link to="/contact">kontaktieren</Link> Sie uns
-          für weitere Infos darüber wie Sie uns helfen können.{' '}
+          für weitere Infos darüber wie Sie uns helfen können.
           <Link to="/volunteer">Hier</Link> gehts zu unserer Volunteer-Seite.
           Vielen Dank für Ihren Beitrag!
         </div>
