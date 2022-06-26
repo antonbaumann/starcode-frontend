@@ -62,17 +62,24 @@ export const useTeam = (): BoardAndMembers => {
 
   const teamResult = data.team.data.attributes.members
 
-  const team = teamResult.map((memberResult: any) => ({
-    name: memberResult.name,
-    role: memberResult.role,
-    imageUrl: memberResult.image.data[0].attributes.formats.medium.url,
-    management: memberResult.management,
-    instagramUrl: memberResult.instagramUrl,
-    facebookUrl: memberResult.facebookUrl,
-    linkedinUrl: memberResult.linkedinUrl,
-    githubUrl: memberResult.githubUrl,
-    email: memberResult.email,
-  })) as MemberModel[]
+  const team = teamResult.map((memberResult: any) => {
+    const imageInfo =
+      memberResult.image.data[0].attributes.formats.medium ||
+      memberResult.image.data[0].attributes.formats.small ||
+      memberResult.image.data[0].attributes.formats.thumbnail
+
+    return {
+      name: memberResult.name,
+      role: memberResult.role,
+      imageUrl: imageInfo.url,
+      management: memberResult.management,
+      instagramUrl: memberResult.instagramUrl,
+      facebookUrl: memberResult.facebookUrl,
+      linkedinUrl: memberResult.linkedinUrl,
+      githubUrl: memberResult.githubUrl,
+      email: memberResult.email,
+    }
+  }) as MemberModel[]
 
   return {
     board: team.filter((member) => member.management),
