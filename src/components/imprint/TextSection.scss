@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .text-section {
   margin: 0 auto;
   max-width: 800px;
@@ -11,5 +13,10 @@
   .content {
     margin-top: 1em;
     text-align: justify;
+  }
+
+  @media screen and (max-width: $content-breakpoint) {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
