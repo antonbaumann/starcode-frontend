@@ -1,5 +1,6 @@
 import gql from 'graphql-tag'
 import { useQuery } from '@apollo/react-hooks'
+import { shuffle } from '../../util/array'
 
 export type MemberModel = {
   name: string
@@ -83,6 +84,6 @@ export const useTeam = (): BoardAndMembers => {
 
   return {
     board: team.filter((member) => member.management),
-    members: team.filter((member) => !member.management),
+    members: shuffle(team.filter((member) => !member.management)),
   }
 }
