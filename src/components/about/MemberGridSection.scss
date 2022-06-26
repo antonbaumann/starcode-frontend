@@ -2,8 +2,6 @@
 
 .member-grid-section {
   padding-bottom: 2em;
-  padding-left: 8vw;
-  padding-right: 8vw;
   padding-top: 2em;
 
   .section-title {
@@ -18,6 +16,7 @@
 
     .member {
       margin-top: 1em;
+      width: 180px;
 
       img {
         height: 180px;
@@ -52,13 +51,18 @@
   }
 
   @media only screen and (max-width: $content-breakpoint) {
+    padding-left: 1em;
+    padding-right: 1em;
+
     .content {
       justify-content: space-between;
 
       .member {
+        width: 42vw;
+
         img {
-          height: 37vw;
-          width: 37vw;
+          height: 42vw;
+          width: 42vw;
         }
       }
     }

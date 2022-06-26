@@ -45,7 +45,7 @@ const MemberGridSection = ({ title, members }: MemberGridSectionProps) => {
                 </ExternalLink>
               )}
               {member.email && (
-                <ExternalLink to={member.email} target="_blank">
+                <ExternalLink to={`mailto:${member.email}`} target="_blank">
                   <EmailLogo />
                 </ExternalLink>
               )}
