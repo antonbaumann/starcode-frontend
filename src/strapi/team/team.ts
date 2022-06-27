@@ -64,15 +64,18 @@ export const useTeam = (): BoardAndMembers => {
   const teamResult = data.team.data.attributes.members
 
   const team = teamResult.map((memberResult: any) => {
-    const imageInfo =
-      memberResult.image.data[0].attributes.formats.medium ||
-      memberResult.image.data[0].attributes.formats.small ||
-      memberResult.image.data[0].attributes.formats.thumbnail
+    const imageData = memberResult.image.data[0]
+
+    const imageUrl =
+      imageData?.attributes.formats.medium?.url ||
+      imageData?.attributes.formats.small?.url ||
+      imageData?.attributes.formats.thumbnail?.url ||
+      ''
 
     return {
       name: memberResult.name,
       role: memberResult.role,
-      imageUrl: imageInfo.url,
+      imageUrl: imageUrl,
       management: memberResult.management,
       instagramUrl: memberResult.instagramUrl,
       facebookUrl: memberResult.facebookUrl,
