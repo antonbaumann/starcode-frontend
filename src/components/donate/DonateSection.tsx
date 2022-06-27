@@ -7,7 +7,7 @@ import { sendEvent } from '../../util/events'
 
 const DonateSection = () => {
   const sendDonateEvent = () => {
-    sendEvent('donate', {category: 'donate'})
+    sendEvent('donate', { category: 'donate' })
   }
 
   return (

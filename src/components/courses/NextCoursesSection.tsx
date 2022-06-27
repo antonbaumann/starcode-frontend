@@ -28,7 +28,7 @@ const NextCoursesSection = ({
   const selectCity = (city: string) => {
     onSelectCity(city)
     setShowOptions(false)
-    sendEvent('course_filter', {city: city, category: 'course'})
+    sendEvent('course_filter', { city: city, category: 'course' })
   }
 
   const resetFilters = () => {
