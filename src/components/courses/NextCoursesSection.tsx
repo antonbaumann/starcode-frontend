@@ -6,6 +6,7 @@ import ArrowDownIcon from '../ArrowDownIcon'
 import { useState } from 'react'
 import classNames from 'classnames'
 import { ReactComponent as FilterIcon } from '../../assets/svg/icons/filter.svg'
+import { sendEvent } from '../../util/events'
 
 type NextCoursesSectionProps = {
   cities: string[]
@@ -27,6 +28,7 @@ const NextCoursesSection = ({
   const selectCity = (city: string) => {
     onSelectCity(city)
     setShowOptions(false)
+    sendEvent('course_filter', {city: city, category: 'course'})
   }
 
   const resetFilters = () => {
