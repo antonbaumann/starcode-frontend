@@ -6,6 +6,7 @@ import CollapseButton from './CollapseButton'
 import Button from './Button'
 import { CourseModel } from '../strapi/courses/courses'
 import ExternalLink from './ExternalLink'
+import { sendEvent } from '../util/events'
 
 type CourseProps = {
   className?: string
@@ -22,7 +23,18 @@ const Course = ({
   onToggleCollapse,
 }: CourseProps) => {
   const handleCourseBoxClick = () => {
-    if (isCollapsed) onToggleCollapse()
+    if (isCollapsed) {
+      onToggleCollapse()
+      sendCourseDetailEvent()
+    }
+  }
+
+  const sendCourseEnrollEvent = () => {
+    sendEvent('course_enroll', { city: course.city, category: 'course' })
+  }
+
+  const sendCourseDetailEvent = () => {
+    sendEvent('course_detail', { city: course.city, category: 'course' })
   }
 
   return (
@@ -58,7 +70,11 @@ const Course = ({
         <div className="description">{course.description}</div>
       </div>
       <ExternalLink to={course.enrollFormUrl ?? '#'} target="_blank">
-        <Button className="enroll-button-mobile" text="anmelden" />
+        <Button
+          className="enroll-button-mobile"
+          text="anmelden"
+          onClick={sendCourseEnrollEvent}
+        />
       </ExternalLink>
       <CollapseButton isCollapsed={!isCollapsed} onClick={onToggleCollapse} />
     </div>

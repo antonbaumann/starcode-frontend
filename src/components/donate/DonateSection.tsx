@@ -3,14 +3,23 @@ import './DonateSection.scss'
 import girlsImage from '../../assets/img/4_girls.png'
 import Button from '../Button'
 import { Link } from 'react-router-dom'
+import { sendEvent } from '../../util/events'
 
 const DonateSection = () => {
+  const sendDonateEvent = () => {
+    sendEvent('donate', { category: 'donate' })
+  }
+
   return (
     <section className="donate-section">
       <div className="content">
         <GradientCircle className="circle" />
         <img src={girlsImage} className="girls-image" alt="group of girls" />
-        <Button text="Jetzt spenden" className="button" />
+        <Button
+          text="Jetzt spenden"
+          className="button"
+          onClick={sendDonateEvent}
+        />
         <div className="card">
           Wir freuen uns über jede Spende! Starcode inspiriert junge Frauen dazu
           ihre Leidenschaften in einer technologieorientierten Welt zu
