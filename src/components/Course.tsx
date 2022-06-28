@@ -52,8 +52,13 @@ const Course = ({
           <div className="city">{course.city}</div>
           <div className="title">{course.name}</div>
         </div>
-
-        <Button className="enroll-button" text="anmelden" />
+        <ExternalLink to={course.enrollFormUrl ?? '#'} target="_blank">
+          <Button
+            className="enroll-button"
+            text="anmelden"
+            onClick={sendCourseEnrollEvent}
+          />
+        </ExternalLink>
       </div>
       <div className="course-body">
         <div className="age">
