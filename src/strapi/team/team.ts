@@ -24,15 +24,10 @@ const TEAM_QUERY = gql`
     team {
       data {
         attributes {
-          members {
+          members(pagination: { limit: -1 }) {
             name
             role
             management
-            instagramUrl
-            facebookUrl
-            linkedinUrl
-            githubUrl
-            email
             image {
               data {
                 attributes {
