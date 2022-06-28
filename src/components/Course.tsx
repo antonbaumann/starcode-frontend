@@ -6,7 +6,7 @@ import CollapseButton from './CollapseButton'
 import Button from './Button'
 import { CourseModel } from '../strapi/courses/courses'
 import ExternalLink from './ExternalLink'
-import { sendEvent } from '../util/events'
+import { sendEvent } from '../util/analytics'
 
 type CourseProps = {
   className?: string

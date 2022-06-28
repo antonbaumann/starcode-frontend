@@ -6,7 +6,7 @@ import ArrowDownIcon from '../ArrowDownIcon'
 import { useState } from 'react'
 import classNames from 'classnames'
 import { ReactComponent as FilterIcon } from '../../assets/svg/icons/filter.svg'
-import { sendEvent } from '../../util/events'
+import { sendEvent } from '../../util/analytics'
 
 type NextCoursesSectionProps = {
   cities: string[]
