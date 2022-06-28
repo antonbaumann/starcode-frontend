@@ -10,7 +10,7 @@ const HttpsRedirect = ({ children, disabled = false }: HttpsRedirectProps) => {
     if (!disabled && window.location.protocol === 'http:') {
       window.location.replace(window.location.href.replace('http:', 'https:'))
     }
-  }, [])
+  }, [disabled])
 
   return <>{children}</>
 }
