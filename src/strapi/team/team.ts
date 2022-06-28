@@ -28,6 +28,11 @@ const TEAM_QUERY = gql`
             name
             role
             management
+            instagramUrl
+            facebookUrl
+            linkedinUrl
+            githubUrl
+            email
             image {
               data {
                 attributes {
