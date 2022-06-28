@@ -3,7 +3,7 @@ import './DonateSection.scss'
 import girlsImage from '../../assets/img/4_girls.png'
 import Button from '../Button'
 import { Link } from 'react-router-dom'
-import { sendEvent } from '../../util/events'
+import { sendEvent } from '../../util/analytics'
 
 const DonateSection = () => {
   const sendDonateEvent = () => {
