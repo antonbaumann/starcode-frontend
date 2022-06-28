@@ -5,6 +5,7 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { ApolloProvider } from '@apollo/react-hooks'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
+import HttpsRedirect from './components/HttpsRedirect'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 const client = new ApolloClient({
@@ -14,9 +15,11 @@ const client = new ApolloClient({
 
 root.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>
+    <HttpsRedirect disabled={process.env.NODE_ENV === 'development'}>
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
+    </HttpsRedirect>
   </React.StrictMode>,
 )
 
