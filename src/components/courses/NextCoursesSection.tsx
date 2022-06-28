@@ -42,6 +42,9 @@ const NextCoursesSection = ({
 
   return (
     <section className="next-courses-section">
+      <div className="image-container">
+        <img src={girlImg} alt="girl" />
+      </div>
       <div className="content">
         <SectionTitle className="title">Unsere Nächsten Kurse</SectionTitle>
         <div className="filter-container">
@@ -74,9 +77,6 @@ const NextCoursesSection = ({
           <p>Zu allen Kursen</p>
           <ArrowDownIcon height="3em" stroke="#000" onClick={onClickArrow} />
         </div>
-      </div>
-      <div className="image-container">
-        <img src={girlImg} alt="girl" />
       </div>
     </section>
   )
