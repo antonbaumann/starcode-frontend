@@ -52,7 +52,11 @@ const Course = ({
           <div className="city">{course.city}</div>
           <div className="title">{course.name}</div>
         </div>
-        <ExternalLink to={course.enrollFormUrl ?? '#'} target="_blank">
+        <ExternalLink
+          to={course.enrollFormUrl ?? '#'}
+          target="_blank"
+          className="enroll-button-link"
+        >
           <Button
             className="enroll-button"
             text="anmelden"
