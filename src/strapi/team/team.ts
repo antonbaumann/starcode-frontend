@@ -11,6 +11,7 @@ export type MemberModel = {
   facebookUrl?: string
   linkedinUrl?: string
   githubUrl?: string
+  websiteUrl?: string
   email?: string
 }
 
@@ -32,6 +33,7 @@ const TEAM_QUERY = gql`
             facebookUrl
             linkedinUrl
             githubUrl
+            websiteUrl
             email
             image {
               data {
@@ -81,6 +83,7 @@ export const useTeam = (): BoardAndMembers => {
       facebookUrl: memberResult.facebookUrl,
       linkedinUrl: memberResult.linkedinUrl,
       githubUrl: memberResult.githubUrl,
+      websiteUrl: memberResult.websiteUrl,
       email: memberResult.email,
     }
   }) as MemberModel[]

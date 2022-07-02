@@ -6,6 +6,7 @@ import { ReactComponent as InstagramLogo } from '../../assets/svg/icons/instagra
 import { ReactComponent as FacebookLogo } from '../../assets/svg/icons/facebook.svg'
 import { ReactComponent as LinkedinLogo } from '../../assets/svg/icons/linkedin.svg'
 import { ReactComponent as GithubLogo } from '../../assets/svg/icons/github.svg'
+import { ReactComponent as WebsiteLogo } from '../../assets/svg/icons/link-on-off.svg'
 import { ReactComponent as EmailLogo } from '../../assets/svg/icons/email.svg'
 
 type MemberGridSectionProps = {
@@ -42,6 +43,11 @@ const MemberGridSection = ({ title, members }: MemberGridSectionProps) => {
               {member.githubUrl && (
                 <ExternalLink to={member.githubUrl} target="_blank">
                   <GithubLogo />
+                </ExternalLink>
+              )}
+              {member.websiteUrl && (
+                <ExternalLink to={member.websiteUrl} target="_blank">
+                  <WebsiteLogo />
                 </ExternalLink>
               )}
               {member.email && (
