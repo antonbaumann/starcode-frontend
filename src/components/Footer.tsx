@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { ReactComponent as InstagramLogo } from '../assets/svg/icons/instagram.svg'
 import { ReactComponent as FacebookLogo } from '../assets/svg/icons/facebook.svg'
 import { ReactComponent as LinkedinLogo } from '../assets/svg/icons/linkedin.svg'
+import { ReactComponent as GithubLogo } from '../assets/svg/icons/github.svg'
 import { useSocialMediaUrls } from '../strapi/social/social'
 import ExternalLink from './ExternalLink'
 
@@ -30,6 +31,9 @@ const Footer = ({ darkMode }: FooterProps) => {
         </ExternalLink>
         <ExternalLink to={socialMediaUrls.linkedinUrl} target="_blank">
           <LinkedinLogo height="2em" width="2em" stroke="#000" />
+        </ExternalLink>
+        <ExternalLink to={socialMediaUrls.githubUrl} target="_blank">
+          <GithubLogo height="2em" width="2em" stroke="#000" />
         </ExternalLink>
       </div>
       <div className="footer-menu">

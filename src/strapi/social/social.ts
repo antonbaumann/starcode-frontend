@@ -5,6 +5,7 @@ export type SocialMediaUrlsModel = {
   instagramUrl: string
   facebookUrl: string
   linkedinUrl: string
+  githubUrl: string
   newsletterUrl: string
 }
 
@@ -16,6 +17,7 @@ const SOCIAL_QUERY = gql`
           instagramUrl
           facebookUrl
           linkedinUrl
+          githubUrl
           newsletterUrl
         }
       }
@@ -30,6 +32,7 @@ export const useSocialMediaUrls = (): SocialMediaUrlsModel => {
     instagramUrl: '',
     facebookUrl: '',
     linkedinUrl: '',
+    githubUrl: '',
     newsletterUrl: '',
   }
 
