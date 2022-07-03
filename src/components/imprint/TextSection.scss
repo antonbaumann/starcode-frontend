@@ -12,7 +12,10 @@
 
   .content {
     margin-top: 1em;
-    text-align: justify;
+  }
+
+  b {
+    font-weight: bold;
   }
 
   @media screen and (max-width: $content-breakpoint) {
