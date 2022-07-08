@@ -43,14 +43,15 @@ const ImprintView = () => {
           <b>Konzeption und Entwicklung</b>
           <br />
           <br />
-          Programmierung:{' '}
+          Design: Leonard Künstner und Angelina Dudkin Programmierung:{' '}
           <ExternalLink to="https://antonbaumann.com">
             <>Anton Baumann</>
           </ExternalLink>
           <br />
           <br />
           <br />
-          <b>Verbraucherstreitbeilegung/Universalschlichtungsstelle</b>
+          <b>Verbraucherstreitbeilegung / Universalschlichtungsstelle</b>
+          <br />
           <br />
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
           vor einer Verbraucherschlichtungsstelle teilzunehmen.
