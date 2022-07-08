@@ -43,8 +43,7 @@ const ImprintView = () => {
           <b>Konzeption und Entwicklung</b>
           <br />
           <br />
-          Design: <br />
-          Leonard Künstner und Angelina Dudkin<br />
+          Design: Leonard Künstner und Angelina Dudkin<br />
           Programmierung:{' '}
           <ExternalLink to="https://antonbaumann.com">
             <>Anton Baumann</>
