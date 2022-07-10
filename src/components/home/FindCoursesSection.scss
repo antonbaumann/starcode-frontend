@@ -13,11 +13,11 @@
     color: white;
     margin-top: 3em;
     min-width: 400px;
-    width: 40vw;
+    width: 45vw;
     z-index: 10;
 
     .section-title {
-      font-size: 500%;
+      font-size: 400%;
     }
 
     p {
@@ -29,13 +29,13 @@
 
   .GirlsImageOnCirlce {
     align-self: flex-end;
-    height: 45vw;
+    height: 40vw;
     min-height: 400px;
     min-width: 400px;
     overflow: hidden;
     position: relative;
     transition: min-width 70ms, min-height 70ms;
-    width: 45vw;
+    width: 40vw;
     z-index: 9;
 
     .gradient-circle-home {
@@ -55,23 +55,6 @@
   }
 
   @media only screen and (max-width: $mobile-breakpoint) {
-    .content {
-      margin-top: 2em;
-      min-width: 300px;
-      width: 40vw;
-
-      .section-title {
-        font-size: 350%;
-      }
-    }
-
-    .GirlsImageOnCirlce {
-      min-height: 55vw;
-      min-width: 55vw;
-    }
-  }
-
-  @media only screen and (max-width: $content-breakpoint) {
     align-items: center;
     flex-direction: column-reverse;
     padding-top: 1em;
@@ -83,7 +66,7 @@
       width: 80vw;
 
       .section-title {
-        font-size: 250%;
+        font-size: 270%;
       }
     }
 

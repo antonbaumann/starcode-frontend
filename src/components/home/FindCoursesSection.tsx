@@ -14,13 +14,14 @@ const FindCoursesSection = () => {
       </div>
       <div className="content">
         <SectionTitle className="section-title">
-          Everyone
+          Coding ist
           <br />
-          Can Code
+          Frauensache!
         </SectionTitle>
         <p>
-          Finde Kurse in deiner Nähe und
-          <br /> starte deine Zukunft in der IT
+          Kostenlose Programmierkurse
+          <br />
+          von Student:innen für Schülerinnen*!
         </p>
         <Link to="/courses">
           <Button text="Kurs finden" />
