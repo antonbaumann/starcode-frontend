@@ -27,7 +27,7 @@ const OverviewSection = () => {
             </div>
             <div className="table-row">
               <div className="key">Email</div>
-              <div className="value">friedrich.wicke@protonmail.com</div>
+              <div className="value">info@starcode.de</div>
             </div>
           </div>
         </div>
