@@ -23,7 +23,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "serve": "^14.0.1",
-    "typescript": "^4.8.2",
+    "typescript": "^4.8.4",
     "web-vitals": "^3.0.1"
   },
   "scripts": {
