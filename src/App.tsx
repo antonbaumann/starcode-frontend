@@ -91,7 +91,7 @@ function App() {
             path="/form"
             element={
               <Page title="Starcode | Form">
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true" action="/">
                   <label>Vorname: <input type="text" name="first_name" /></label>
                   <label>Nachname: <input type="text" name="last_name" /></label>
                   <label>Email: <input type="email" name="email" /></label>
