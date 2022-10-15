@@ -87,6 +87,18 @@ function App() {
               </Page>
             }
           />
+          <Route
+            path="/form"
+            element={
+              <Page title="Starcode | Form">
+                <form name="contact" method="POST" data-netlify="true">
+                  <label>Vorname: <input type="text" name="first_name" /></label>
+                  <label>Nachname: <input type="text" name="last_name" /></label>
+                  <label>Email: <input type="email" name="email" /></label>
+                </form>
+              </Page>
+            }
+          />
         </Routes>
       </Router>
     </div>
