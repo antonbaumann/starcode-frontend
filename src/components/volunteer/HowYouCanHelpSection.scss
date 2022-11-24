@@ -21,6 +21,15 @@
     }
 
     .description {
+      font-size: 130%;
+      margin-top: 1em;
+    }
+
+    .help-button {
+      align-self: flex-start;
+      background-color: blue;
+      color: white;
+      justify-self: flex-end;
       margin-top: 1em;
     }
   }

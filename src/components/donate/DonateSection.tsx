@@ -4,6 +4,7 @@ import girlsImage from '../../assets/img/4_girls.png'
 import Button from '../Button'
 import { Link } from 'react-router-dom'
 import { sendEvent } from '../../util/analytics'
+import ExternalLink from '../ExternalLink'
 
 const DonateSection = () => {
   const sendDonateEvent = () => {
@@ -15,11 +16,14 @@ const DonateSection = () => {
       <div className="content">
         <GradientCircle className="circle" />
         <img src={girlsImage} className="girls-image" alt="group of girls" />
-        <Button
-          text="Jetzt spenden"
-          className="button"
-          onClick={sendDonateEvent}
-        />
+        <ExternalLink to="https://forms.gle/NWnBQXQ1wu1dLkxZ8" target="_blank">
+          <Button
+            text="Jetzt spenden"
+            className="button"
+            onClick={sendDonateEvent}
+          />
+        </ExternalLink>
+
         <div className="card">
           Wir freuen uns über jede Spende! Starcode inspiriert junge Frauen dazu
           ihre Leidenschaften in einer technologieorientierten Welt zu
