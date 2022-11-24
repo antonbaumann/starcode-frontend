@@ -3,6 +3,8 @@ import SectionTitle from '../SectionTitle'
 import './HowYouCanHelpSection.scss'
 
 import girlImage from '../../assets/img/girl3.png'
+import Button from '../Button'
+import ExternalLink from '../ExternalLink'
 
 const HowYouCanHelpSection = () => {
   return (
@@ -19,6 +21,9 @@ const HowYouCanHelpSection = () => {
           Kursvorbereitung und -Durchführung, bis hin zur Arbeit vor Ort gibt es
           viele verschiedene und interessante Aufgaben, die Dich erwaten.
         </div>
+        <ExternalLink to="https://forms.gle/rErXFGqna8THvPJk6" target="_blank">
+          <Button text="Ich will helfen!" className="help-button" />
+        </ExternalLink>
       </div>
       <img src={girlImage} alt="girl" className="girl-image" />
     </section>

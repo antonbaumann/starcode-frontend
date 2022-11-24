@@ -4,6 +4,7 @@ import GradientCircle from '../GradientCircle'
 import SectionTitle from '../SectionTitle'
 import Button from '../Button'
 import { Link } from 'react-router-dom'
+import ExternalLink from '../ExternalLink'
 
 const FindCoursesSection = () => {
   return (
@@ -23,9 +24,14 @@ const FindCoursesSection = () => {
           <br />
           von Student:innen für Schülerinnen*!
         </p>
-        <Link to="/courses">
-          <Button text="Kurs finden" />
-        </Link>
+        <div className="button-container">
+          <Link to="/courses">
+            <Button text="Kurs finden" />
+          </Link>
+          <ExternalLink to="http://eepurl.com/ibqUwf" target="_blank">
+            <Button text="Teilnehmen!" />
+          </ExternalLink>
+        </div>
       </div>
     </section>
   )
