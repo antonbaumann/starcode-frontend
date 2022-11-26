@@ -6,10 +6,7 @@ const ContactInfoSection = () => {
       <p>So kannst Du uns auch kontaktieren</p>
       <br />
       <p>
-        email{' '}
-        <a href="mailto:friedrich.wicke@protonmail.com">
-          friedrich.wicke@protonmail.com
-        </a>
+        email <a href="mailto:info@starcode.de">info@starcode.de</a>
       </p>
       <p>telefon +49 156 494848484</p>
     </section>

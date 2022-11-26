@@ -12,7 +12,7 @@ const ImprintView = () => {
           <b>Angaben gemäß § 5 TM</b>
           <br />
           <br />
-          StarCode e.V.
+          starcode e.V.
           <br />
           Heilmannstraße 15
           <br />
@@ -36,7 +36,7 @@ const ImprintView = () => {
           <br />
           Telefon: +49 152 29676216
           <br />
-          Email: friedrich.wicke@protonmail.com
+          Email: info@starcode.de
           <br />
           <br />
           <br />
@@ -121,7 +121,7 @@ const ImprintView = () => {
           <br />
           1. Name und Kontaktdaten des Verantwortlichen
           <br />
-          StarCode e.V.
+          starcode e.V.
           <br />
           Heilmannstraße 15
           <br />
@@ -134,13 +134,13 @@ const ImprintView = () => {
           <br />
           3. Zwecke und Rechtsgrundlagen der Verarbeitung <br />
           Ihre Daten werden dafür erhoben, um die Organisation und Durchführung
-          von Veranstaltungen von StarCode e.V. zu organisieren. <br />
+          von Veranstaltungen von starcode e.V. zu organisieren. <br />
           Ihre Daten werden auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO
           verarbeitet. <br />
           <br />
           4. Kategorien der personenbezogenen Daten, die verarbeitet werden
           <br />
-          StarCode e.V. verarbeitet folgende Kategorien von personenbezogenen
+          starcode e.V. verarbeitet folgende Kategorien von personenbezogenen
           Daten
           <br />
           von Ihnen:
@@ -213,7 +213,7 @@ const ImprintView = () => {
           <br />
           - Widerrufsrecht bei Einwilligung
           <br />
-          Wenn Sie in die Verarbeitung durch StarCode e.V. eine entsprechende
+          Wenn Sie in die Verarbeitung durch starcode e.V. eine entsprechende
           Erklärung eingewilligt haben, können Sie die Einwilligung jederzeit
           für die Zukunft widerrufen.
           <br />

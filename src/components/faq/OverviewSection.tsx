@@ -10,7 +10,7 @@ const OverviewSection = () => {
         Du hast Fragen an uns? Schreib uns gerne eine Email oder kontaktiere
         unsere Fachspezialisten.
         <br />
-        <Link to="/team">Hier</Link> findest du alle Kontakte.
+        <Link to="/about">Hier</Link> findest du alle Kontakte.
       </div>
       <div className="text">
         Unsere allgemeine Email: <br />

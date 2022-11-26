@@ -18,7 +18,7 @@ function App() {
           <Route
             path="/"
             element={
-              <Page title="Starcode">
+              <Page title="starcode">
                 <HomeView />
               </Page>
             }
@@ -26,7 +26,7 @@ function App() {
           <Route
             path="/mission"
             element={
-              <Page title="Starcode | Mission">
+              <Page title="starcode | Mission">
                 <MissionView />
               </Page>
             }
@@ -34,7 +34,7 @@ function App() {
           <Route
             path="/courses"
             element={
-              <Page title="Starcode | Kurse">
+              <Page title="starcode | Kurse">
                 <CoursesView />
               </Page>
             }
@@ -42,7 +42,7 @@ function App() {
           <Route
             path="/about"
             element={
-              <Page title="Starcode | Über uns">
+              <Page title="starcode | Über uns">
                 <AboutView />
               </Page>
             }
@@ -50,7 +50,7 @@ function App() {
           <Route
             path="/volunteer"
             element={
-              <Page title="Starcode | Volunteer">
+              <Page title="starcode | Volunteer">
                 <VolunteerView />
               </Page>
             }
@@ -58,7 +58,7 @@ function App() {
           <Route
             path="/donate"
             element={
-              <Page title="Starcode | Spenden">
+              <Page title="starcode | Spenden">
                 <DonateView />
               </Page>
             }
@@ -66,7 +66,7 @@ function App() {
           <Route
             path="/contact"
             element={
-              <Page title="Starcode | Kontakt">
+              <Page title="starcode | Kontakt">
                 <ContactView />
               </Page>
             }
@@ -74,7 +74,7 @@ function App() {
           <Route
             path="/faq"
             element={
-              <Page title="Starcode | FAQ">
+              <Page title="starcode | FAQ">
                 <QuestionAnswerView />
               </Page>
             }
@@ -82,7 +82,7 @@ function App() {
           <Route
             path="/imprint"
             element={
-              <Page title="Starcode | Impressum">
+              <Page title="starcode | Impressum">
                 <ImprintView />
               </Page>
             }

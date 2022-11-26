@@ -22,7 +22,7 @@ export const volunteerGroups: VolunteerGroup[] = [
   {
     title: 'Organisation',
     description:
-      'Auch bei Starcode fallen die typischen Aufgaben innerhalb einer Organisation an: Human Resources, Recht, Finanzen und vieles mehr. Ohne die Menschen in unserem Organisationsteam würde bei uns gar nichts laufen. Wir suchen Menschen die Interesse an Orga- und Management Themen haben. Vorerfahrung in den Bereichen Wirtschaft, Psychologie, Management und Jura sind hilfreich, jedoch freuen wir über alle interessierten Menschen und bringen euch gerne alles bei, was ihr benötigt. Ansprechperson ist Friedrich unter',
+      'Auch bei starcode fallen die typischen Aufgaben innerhalb einer Organisation an: Human Resources, Recht, Finanzen und vieles mehr. Ohne die Menschen in unserem Organisationsteam würde bei uns gar nichts laufen. Wir suchen Menschen die Interesse an Orga- und Management Themen haben. Vorerfahrung in den Bereichen Wirtschaft, Psychologie, Management und Jura sind hilfreich, jedoch freuen wir über alle interessierten Menschen und bringen euch gerne alles bei, was ihr benötigt. Ansprechperson ist Friedrich unter',
     iconUrl: organizationSvg,
     contactEmail: 'friedrich@starcode.de',
   },

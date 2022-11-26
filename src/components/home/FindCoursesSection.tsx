@@ -3,7 +3,6 @@ import girlsImage from '../../assets/img/4_girls.png'
 import GradientCircle from '../GradientCircle'
 import SectionTitle from '../SectionTitle'
 import Button from '../Button'
-import { Link } from 'react-router-dom'
 import ExternalLink from '../ExternalLink'
 
 const FindCoursesSection = () => {
@@ -25,11 +24,14 @@ const FindCoursesSection = () => {
           von Student:innen für Schülerinnen*!
         </p>
         <div className="button-container">
-          <Link to="/courses">
-            <Button text="Kurs finden" />
-          </Link>
           <ExternalLink to="http://eepurl.com/ibqUwf" target="_blank">
-            <Button text="Teilnehmen!" />
+            <Button text="Schülerinnen" />
+          </ExternalLink>
+          <ExternalLink
+            to="https://forms.gle/4scBtkLUrFbq1Wbm9"
+            target="_blank"
+          >
+            <Button text="Lehrer:innen" />
           </ExternalLink>
         </div>
       </div>
