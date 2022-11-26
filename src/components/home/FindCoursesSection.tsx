@@ -27,7 +27,10 @@ const FindCoursesSection = () => {
           <ExternalLink to="http://eepurl.com/ibqUwf" target="_blank">
             <Button text="Schülerinnen" />
           </ExternalLink>
-          <ExternalLink to="https://forms.gle/4scBtkLUrFbq1Wbm9" target="_blank">
+          <ExternalLink
+            to="https://forms.gle/4scBtkLUrFbq1Wbm9"
+            target="_blank"
+          >
             <Button text="Lehrer:innen" />
           </ExternalLink>
         </div>
