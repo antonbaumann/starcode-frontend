@@ -16,7 +16,9 @@ const UpcomingEventsSection = () => {
         </SectionTitle>
         <p>
           Momentan bieten wir Kurse in München, Berlin, Augsburg Zürich und Wien
-          an. Du hast Lust einen Ableger in deiner Stadt zu gründen? Außerdem bieten wir zahlreiche Kurse Online an, an denen ihr von überall aus teilnehmen könnt.
+          an. Du hast Lust einen Ableger in deiner Stadt zu gründen? Außerdem
+          bieten wir zahlreiche Kurse Online an, an denen ihr von überall aus
+          teilnehmen könnt.
         </p>
       </div>
       <div className="event-list">
